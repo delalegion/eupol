@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   :root {
+      --fs-h1: 4.5rem;
+      --fs-h2: 3.125rem;
+      --fs-h3: 2.25rem;
+      --fs-h4: 1.3125rem;
+      --fs-h5: 0.75rem;
+      --fs-body1: 1rem;
+      --fs-body2: 0.875rem;
+      --fs-button: 1rem;
+      --fs-caption: 0.75rem;
+
+      --lh-h1: 5.25rem; 
+      --lh-h2: 3.75rem; 
+      --lh-h3: 2.7rem; 
+      --lh-h4: 1.8375rem; 
+      --lh-h5: 1.225rem; 
+      --lh-body1: 1.5rem;
+      --lh-body2: 1.225rem;
+      --lh-button: 1.25rem;
+      --lh-caption: 0.975rem;
+
+      --ls-5: -0.19063rem;
+      --ls-4: -0.09rem;
+      --ls-3: -0.03938rem;;
+      --ls-2: -0.015rem;
+   }
+   body {
+      font-family: 'Inter', sans-serif;
+   }
+}
