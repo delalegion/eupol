@@ -1,11 +1,11 @@
 <footer id="footer">
-	<div class="mx-auto max-w-screen-xl gap-20 flex flex-col">
-		<div class="flex w-full justify-between items-center">
+	<div class="mx-auto max-w-screen-xl gap-20 flex flex-col px-4 sm:px-8">
+		<div class="flex w-full max-[390px]:flex-col justify-between items-center max-[390px]:gap-6">
 
 			<div class="bg-primary clip-logo min-w-52 max-w-52 p-4 flex justify-center content-center col-span-2">
 				<h2 class="font-primary text-h2 text-dark-50 font-extrabold select-none">EuPol</h2>
 			</div>
-			<div class="flex w-full justify-end mt-2">
+			<div class="flex w-full justify-center min-[390px]:justify-end mt-2">
 				<div class="flex gap-4">
 					<div class="p-4 rounded-full bg-dark-100/80 w-14 h-14 flex justify-center content-center hover:bg-dark-100/60 hover:cursor-pointer active:scale-95 hover:translate-y-0.5 duration-200">
 						<svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +23,7 @@
 			</div>
 
 		</div>
-		<div class="flex w-full items-center justify-between mb-8">
+		<div class="flex w-full items-center flex-wrap justify-between mb-8 gap-6">
 			<p class="font-primary text-p2 font-semibold text-dark-150">2024 © Eupol | Wszelkie prawa zastrzeżone.</p>
 			<a href="#" class="font-primary text-p2 font-semibold text-dark-50">Polityka prywatności</a>
 			<p class="font-primary text-p2 font-semibold text-dark-150">Projekt oraz wdrożenie strony: <a class="text-dark-50" href="https://www.hubertkruk.pl/">Hubert Kruk</a></p>

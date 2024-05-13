@@ -13,7 +13,9 @@
 
 <Offer />
 
-<Cars />
+<div style="contain: paint;">
+	<Cars />
+</div>
 
 <Contact />
 

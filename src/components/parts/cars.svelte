@@ -26,32 +26,49 @@
 	onMount(() => {
 		window.addEventListener('scroll', handleScroll);
 
-		function roundToNearestDivisible(number: number, divisor: number) {
-			return Math.round(number / divisor) * divisor;
-		}
+		let elementSectionCar: HTMLElement = document.querySelector('.item-car')!;
+		let elementSectionPixels: number = elementSectionCar.offsetWidth * 3 + 500;
+		let heightGridContainer: HTMLElement = document.querySelector("#cars-grid-head")!;
+
+		// Set height for scroll grid
+		heightGridContainer.style.height = elementSectionPixels + 'px';
 
 		function handleScroll() {
 			scrollPosition = window.scrollY;
 
 			if (isInView) {
 				let element: HTMLElement = document.querySelector('.item-grid')!;
-				let elementdwa: HTMLElement = document.querySelector('.item-section')!;
+				let elementSection: HTMLElement = document.querySelector('.item-section')!;
 
 				let titles = document.querySelectorAll<HTMLHeadingElement>('.item-car-h3');
 
-				let distance = getDistanceToTop(elementdwa);
+				window.addEventListener('resize', function(event) {
+					heightGridContainer.style.height = elementSectionPixels + 'px';
+				}, true);
+
+				let distance = getDistanceToTop(elementSection);
 				let distanceWidth =  scrollPosition - distance;
-				let distanceTitle = distanceWidth / 14
+				let distanceTitle = distanceWidth / 14;
 
 				if (distanceWidth > 0) {
-					element.style.transform = 'translateX(-' + distanceWidth + 'px)';
+					//1597
+					let distanceGrid = distanceWidth - elementSectionPixels;
+					let distanceFinal;
+
+					if (distanceWidth <= elementSectionPixels) {
+						distanceFinal = distanceWidth;
+					} else {
+						distanceFinal = elementSectionPixels;
+					}
+	
+					element.style.transform = 'translateX(-' + distanceFinal + 'px)';
 					titles.forEach((el, i) => {
 						el.style.transform = 'translateX(-' + distanceTitle + 'px)';
 					})
 				}
 			}
 
-			requestAnimationFrame(handleScroll);
+			// requestAnimationFrame(handleScroll);
 		}
 
 	})
@@ -59,7 +76,7 @@
 </script>
 
 <section id="cars" class="py-16 md:py-24 lg:py-32 bg-dark-100">
-	<div class="item-section flex flex-col gap-12 md:gap-16 lg:gap-20" style="height: 200vh; position: relative;">
+	<div class="item-section flex flex-col gap-12 md:gap-16 lg:gap-20" style="height: 99rem; position: relative;" id="cars-grid-head">
 
 		<div class="mx-auto max-w-screen-xl gap-20 flex flex-col">
 			<div class="flex flex-row gap-3 justify-center">
@@ -68,12 +85,13 @@
 			</div>
 		</div>
 
-		<div class="flex sticky top-64 item-grid gap-56 ml-24" use:inview={options}
+		<div class="flex sticky top-24 md:top-36 lg:top-52 xl:top-64 item-grid gap-56 ml-24 relative" use:inview={options}
 		on:inview_enter={(event) => {
 			const { inView } = event.detail;
 			isInView = inView;
 		}}>
 
+			<div class="absolute top-0 left-0 right-0 bottom-0 z-0 hidden opacity-0" id="gridWidth"></div>
 			<div class="flex flex-col item-car w-screen flex-[0_0_50%] items-center">
 				<div id="car-1" class="clip-rectangle">
 					<img src={CarOne} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80" alt="Map of card mondeo" />
