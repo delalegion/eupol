@@ -9,7 +9,6 @@
 	import Offer from "../components/parts/offer.svelte";
 
 	export let form;
-	console.log('vite: ' + import.meta.env.VITE_RESEND);
 </script>
 
 <svelte:head>

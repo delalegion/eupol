@@ -33,8 +33,6 @@ export const actions = {
 		}
 
 		const resend = new Resend(import.meta.env.VITE_RESEND);
-		console.log("resend: " + import.meta.env.VITE_RESEND);
-		console.log("test resend");
 
 		(async function () {
 		const { data, error } = await resend.emails.send({
