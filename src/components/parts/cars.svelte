@@ -1,7 +1,7 @@
 <script lang="ts">
-	import CarOne from '$lib/images/car-1.png';
-	import CarTwo from '$lib/images/car-2.png';
-	import CarThree from '$lib/images/car-3.png';
+	import CarOne from '$lib/images/car-1.webp?enhanced';
+	import CarTwo from '$lib/images/car-2.webp?enhanced';
+	import CarThree from '$lib/images/car-3.webp?enhanced';
 	import { onMount } from "svelte";
 	import { inview } from "svelte-inview";
 
@@ -51,8 +51,7 @@
 				let distanceTitle = distanceWidth / 14;
 
 				if (distanceWidth > 0) {
-					//1597
-					let distanceGrid = distanceWidth - elementSectionPixels;
+
 					let distanceFinal;
 
 					if (distanceWidth <= elementSectionPixels) {
@@ -75,7 +74,7 @@
 
 </script>
 
-<section id="cars" class="py-16 md:py-24 lg:py-32 bg-dark-100">
+<section id="flota" class="py-16 md:py-24 lg:py-32 bg-dark-100">
 	<div class="item-section flex flex-col gap-12 md:gap-16 lg:gap-20" style="height: 99rem; position: relative;" id="cars-grid-head">
 
 		<div class="mx-auto max-w-screen-xl gap-20 flex flex-col">
@@ -94,7 +93,7 @@
 			<div class="absolute top-0 left-0 right-0 bottom-0 z-0 hidden opacity-0" id="gridWidth"></div>
 			<div class="flex flex-col item-car w-screen flex-[0_0_50%] items-center">
 				<div id="car-1" class="clip-rectangle">
-					<img src={CarOne} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80" alt="Map of card mondeo" />
+					<enhanced:img src={CarOne} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-80" alt="Map of card mondeo" />
 				</div>
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">FORD MONDEO</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
@@ -105,7 +104,7 @@
 
 			<div class="flex flex-col item-car w-screen flex-[0_0_50%] items-center">
 				<div id="car-1" class="clip-rectangle">
-					<img src={CarTwo} class="bg-cover bg-no-repeat rounded-xl min-w-80 min-h-80 max-h-80" alt="Map of card mondeo" />
+					<enhanced:img src={CarTwo} class="bg-cover bg-no-repeat rounded-xl min-w-80 min-h-80 max-h-80 max-w-80" alt="Map of card mondeo" />
 				</div>
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">AUDI A6</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
@@ -116,7 +115,7 @@
 
 			<div class="flex flex-col item-car w-screen flex-[0_0_50%] items-center">
 				<div id="car-1" class="clip-rectangle">
-					<img src={CarThree} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80" alt="Map of card mondeo" />
+					<enhanced:img src={CarThree} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-80" alt="Map of card mondeo" />
 				</div>
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">FORD TOURNEO</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">

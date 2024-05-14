@@ -1,9 +1,9 @@
 <script>
 	import Primary from "../buttons/primary.svelte";
-   import Map from '$lib/images/map.png';
+   import Map from '$lib/images/map.webp';
 </script>
 
-<section id="about" class="py-16 md:py-24 lg:py-32">
+<section id="onas" class="py-16 md:py-24 lg:py-32">
 	<div class="mx-auto max-w-screen-xl px-4 sm:px-8">
 		<div class="grid grid-cols-6 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
 			<div class="col-span-6 lg:col-span-6">

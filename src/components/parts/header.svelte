@@ -1,27 +1,39 @@
-<script>
-   import Outline from "../buttons/outline.svelte";
+<script lang="ts">
+	import { onMount } from "svelte";
+	import { fade } from 'svelte/transition';
+	import Outline from "../buttons/outline.svelte";
 	import Primary from "../buttons/primary.svelte";
+
+	onMount(() => {
+		let menu: HTMLElement = document.querySelector("#menu")!;
+		let btn: HTMLButtonElement = document.querySelector("#btn-menu")!;
+
+		btn.addEventListener("click", () => {
+			menu.classList.toggle("hidden");
+	}, false);
+	})
 </script>
 
-<header id="header" class="h-screen bg-[url('/bg.png')] bg-cover bg-no-repeat bg-center xl:bg-left pb-24 relative">
+<header id="header" class="h-screen bg-[url('/bg.webp')] bg-cover bg-no-repeat bg-center xl:bg-left pb-24 relative">
 	<div class="bg-gradient-to-b from-dark-50/90 absolute top-0 right-0 left-0 -z-0 w-full h-28"></div>
 	<div class="mx-auto max-w-screen-xl justify-between content-between h-full flex flex-col px-4 sm:px-8">
 		<navbar class="navbar grid grid-cols-12 z-10">
 			<div class="bg-primary clip-logo max-w-52 p-4 flex justify-center content-center col-span-6 min-[425px]:col-span-4 md:col-span-2 px-5">
-				<h2 class="font-primary text-h3 xl:text-h2 text-dark-50 font-extrabold select-none">EuPol</h2>
+				<a href="/" class="font-primary text-h3 xl:text-h2 text-dark-50 font-extrabold select-none">EuPol</a>
 			</div>
 			<div class="h-full border-b-2 border-dark-250/50 w-full min-[425px]:justify-between col-span-6 min-[425px]:col-span-8 md:col-span-10 pl-6 flex content-center justify-end">
 				<div class="py-4 content-center hidden min-[425px]:block">
 					<a href="tel:+48123123123" class="flex gap-3 font-semibold text-gray-50"><span class="text-primary font-bold">/</span> +48 123 123 123</a>
 				</div>
-				<div class="py-4 content-center">
-					<ul class="flex-row gap-6 lg:gap-12 hidden md:flex">
-						<li class="content-center"><a href="#" class="font-semibold text-gray-50 text-p1">O NAS</a></li>
-						<li class="content-center"><a href="#" class="font-semibold text-gray-50 text-p1">OFERTA</a></li>
-						<li class="content-center"><a href="#" class="font-semibold text-gray-50 text-p1">NASZA FLOTA</a></li>
-						<li><Outline size="small">Kontakt</Outline></li>
+				<div class="py-2 md:py-4 content-center">
+					<ul id="menu" class="hidden md:flex md:bg-transparent bg-primary p-8 md:p-0 w-full flex-row gap-6 lg:gap-12 flex flex-col absolute left-4 right-4 md:right-0 top-20 md:left-0 md:top-0 md:relative md:flex-row">
+						<li class="content-center"><a href="#onas" class="font-semibold text-dark-50 md:text-gray-50 text-p1">O NAS</a></li>
+						<li class="content-center"><a href="/oferta" class="font-semibold text-dark-50 md:text-gray-50 text-p1">OFERTA</a></li>
+						<li class="content-center"><a href="#flota" class="font-semibold text-dark-50 md:text-gray-50 text-p1">NASZA FLOTA</a></li>
+						<li class="content-center flex md:hidden"><a href="#kontakt" class="font-semibold text-dark-50 md:text-gray-50 text-p1">KONTAKT</a></li>
+						<li class="hidden md:flex"><Outline size="small" link="#kontakt">Kontakt</Outline></li>
 					</ul>
-               <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+               <button data-collapse-toggle="navbar-default" type="button" id="btn-menu" class="inline-flex bg-[#EAEAEA]/20 items-center p-4 w-16 h-16 justify-center text-sm text-gray-50 rounded-full md:hidden hover:bg-[#EAEAEA]/30 active:scale-95 hover:translate-y-0.5 duration-200 focus:outline-none dark:text-gray-50 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                   <span class="sr-only">Open main menu</span>
                   <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -31,9 +43,9 @@
 			</div>
 		</navbar>
 		<section id="jumbotron" class="flex flex-col gap-4 lg:gap-6">
-			<h1 class="text-dark-300 font-primary text-h3 lg:text-h2 xl:text-h1 text-wrap break-words">EUPOL - Twój komfort <br />i bezpieczeństwo</h1>
+			<h1 class="text-dark-300 font-primary text-h3 lg:text-h2 xl:text-h1 text-wrap break-words">EuPol - Twój komfort <br />i bezpieczeństwo</h1>
 			<h4 class="text-p1 lg:text-h4 font-primary text-dark-300">Szybkie, wygodne i tanie przejazdy transportowe</h4>
-			<div class="flex gap-4 mt-3">
+			<div class="flex gap-4 mt-3 flex-wrap">
 				<Primary>Nasze pojazdy</Primary>
 				<Outline>O nas</Outline>
 			</div>

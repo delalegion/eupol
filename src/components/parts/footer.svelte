@@ -25,7 +25,7 @@
 		</div>
 		<div class="flex w-full items-center flex-wrap justify-between mb-8 gap-6">
 			<p class="font-primary text-p2 font-semibold text-dark-150">2024 © Eupol | Wszelkie prawa zastrzeżone.</p>
-			<a href="#" class="font-primary text-p2 font-semibold text-dark-50">Polityka prywatności</a>
+			<a href="/polityka-prywatnosci" class="font-primary text-p2 font-semibold text-dark-50">Polityka prywatności</a>
 			<p class="font-primary text-p2 font-semibold text-dark-150">Projekt oraz wdrożenie strony: <a class="text-dark-50" href="https://www.hubertkruk.pl/">Hubert Kruk</a></p>
 		</div>
 	</div>
