@@ -4,12 +4,12 @@ import { fail } from '@sveltejs/kit';
 /** @type {import('./$types').Actions} */
 export const actions = {
 	default: async ({ request }: { request: Request }) => {
-		const data = await request.formData();
-		const name = data.get('name') as string;
-		const phone = data.get('phone') as string;
-		const email = data.get('email') as string;
-		const message = data.get('message') as string;
-		const checkbox = data.get('checkbox') as string;
+		const form = await request.formData();
+		const name = form.get('name') as string;
+		const phone = form.get('phone') as string;
+		const email = form.get('email') as string;
+		const message = form.get('message') as string;
+		const checkbox = form.get('checkbox') as string;
 
 		if (name.length < 5) {
 			return fail(400, { name, nameError: true })
@@ -34,7 +34,6 @@ export const actions = {
 
 		const resend = new Resend(import.meta.env.VITE_RESEND);
 
-		(async function () {
 		const { data, error } = await resend.emails.send({
 			from: 'Acme <onboarding@resend.dev>',
 			to: ['nielotweb@gmail.com'],
@@ -46,8 +45,7 @@ export const actions = {
 			return console.log({ error });
 		}
 
-			console.log({ data });
-		})();
+		console.log({ data });
 
 		return { success: true };
 	},
