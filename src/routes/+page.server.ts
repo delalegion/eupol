@@ -9,7 +9,7 @@ export const actions = {
 		const phone = data.get('phone') as string;
 		const email = data.get('email') as string;
 		const message = data.get('message') as string;
-		const checkbox = data.get('checkbox') as boolean;
+		const checkbox = data.get('checkbox') as string;
 
 		if (name.length < 5) {
 			return fail(400, { name, nameError: true })
@@ -28,11 +28,13 @@ export const actions = {
 		if (message.length < 5) {
 			return fail(400, { message, messageError: true })
 		}
-		if (!checkbox) {
+		if (checkbox !== "on") {
 			return fail(400, { checkbox, checkboxError: true })
 		}
 
 		const resend = new Resend(import.meta.env.VITE_RESEND);
+		console.log("resend: " + import.meta.env.VITE_RESEND);
+		console.log("test resend");
 
 		(async function () {
 		const { data, error } = await resend.emails.send({
@@ -43,10 +45,10 @@ export const actions = {
 		});
 
 		if (error) {
-			return console.error({ error });
+			return console.log({ error });
 		}
 
-		console.log({ data });
+			console.log({ data });
 		})();
 
 		return { success: true };

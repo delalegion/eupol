@@ -9,6 +9,7 @@
 	import Offer from "../components/parts/offer.svelte";
 
 	export let form;
+	console.log('vite: ' + import.meta.env.VITE_RESEND);
 </script>
 
 <svelte:head>
@@ -32,7 +33,7 @@
 	<link rel="alternate" type="application/atom+xml" title="Wpisy na ATOM" href="http://example.net/atom">
 	<link rel="index" title="Strona główna" href="https://eupol-przewoznik.pl">
 	<link rel="canonical" href="https://eupol-przewoznik.pl">
-	<link rel="icon" href="https://eupol-przewoznik.pl/images/favicon.png" type="image/png">
+	<!-- <link rel="icon" href="https://eupol-przewoznik.pl/images/favicon.png" type="image/png"> -->
 
 	<title>EuPol - Nowoczesny przewoźnik</title>
 </svelte:head>
