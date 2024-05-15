@@ -38,14 +38,14 @@
 	<title>Eupol - Nowoczesny przewoźnik</title>
 </svelte:head>
 
-<header id="header" class="bg-[url('/bg.webp')] bg-cover bg-no-repeat bg-center xl:bg-left pb-24 relative">
+<header id="header" class="h-screen bg-[url('/bg.webp')] bg-cover bg-no-repeat bg-center xl:bg-left pb-24 relative">
 	<div class="bg-gradient-to-b from-dark-50/90 absolute top-0 right-0 left-0 -z-0 w-full h-28"></div>
 	<div class="mx-auto max-w-screen-xl justify-between content-between h-full flex flex-col px-4 sm:px-8">
-		<navbar class="navbar grid grid-cols-12 z-10">
-			<div class="bg-primary clip-logo max-w-52 p-4 flex justify-center content-center col-span-6 min-[425px]:col-span-4 md:col-span-2 px-5 max-h-20">
+		<navbar class="navbar grid grid-cols-6 md:grid-cols-12 z-10">
+			<div class="bg-primary clip-logo max-w-52 p-4 flex justify-center content-center col-span-3 min-[425px]:col-span-4 md:col-span-2 px-5">
 				<a href="/" class="font-primary text-h3 xl:text-h2 text-dark-50 font-extrabold select-none">EuPol</a>
 			</div>
-			<div class="h-full border-b-2 border-dark-250/50 w-full min-[425px]:justify-between col-span-6 min-[425px]:col-span-8 md:col-span-10 pl-6 flex content-center justify-end">
+			<div class="h-full border-b-2 border-dark-250/50 w-full min-[425px]:justify-between col-span-3 min-[425px]:col-span-8 md:col-span-10 pl-6 flex content-center justify-end">
 				<div class="py-4 content-center hidden min-[425px]:block">
 					<a href="tel:+48123123123" class="flex gap-3 font-semibold text-gray-50"><span class="text-primary font-bold">/</span> +48 123 123 123</a>
 				</div>
