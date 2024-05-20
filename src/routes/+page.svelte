@@ -7,6 +7,7 @@
 	import Footer from "../components/parts/footer.svelte";
 	import Header from "../components/parts/header.svelte";
 	import Offer from "../components/parts/offer.svelte";
+	import Payments from "$lib/images/payments.webp?enhanced";
 
 	export let form;
 </script>
@@ -42,6 +43,12 @@
 <About />
 
 <Offer />
+
+<section id="info" class="bg-[url('/bginfo.webp')] bg-cover bg-no-repeat bg-center py-24 md:py-36 lg:py-42 px-2 relative">
+	<div class="mx-auto max-w-screen-xl px-4 sm:px-8 gap-12 md:gap-16 lg:gap-20 flex flex-col">
+		<h4 class="font-semibold font-primary text-dark-300 text-p1 md:text-h4 text-center">Transport to nasza specjalizacja już od blisko 20 lat. Potrzebujesz fachowej pomocy w kwestii organizacji transportu? Szukasz doświadczonej firmy , która dostarczy twoich klientów jak i towary na czas, bez komplikacji i z zachowaniem najwyższych standardów transportowych. Firma EuPol oferuje profesjonalne usługi transportowe osób oraz towarów. Nasz zespół zorganizuje transport uwzględniając wszystkie Twoje potrzeby takie jak czas, bezpieczeństwo i prywatność.</h4>
+	</div>
+</section>
 
 <div style="contain: paint;">
 	<Cars />
@@ -103,7 +110,7 @@
 					<label class="relative flex items-center p-2 rounded-full cursor-pointer" for="checkbox">
 					  <input type="checkbox" name="checkbox"
 						 class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:bg-primary checked:before:bg-gray-900 hover:before:opacity-10"
-						 id="checkbox" checked />
+						 id="checkbox" />
 					  <span
 						 class="absolute text-grey-900 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
 						 <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
@@ -127,13 +134,30 @@
 				<div class="flex flex-col gap-8">
 					<div class="flex flex-row gap-3">
 						<div class="ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-						<h3 class="text-dark-250 font-semibold text-h4">+48 123 123 123</h3>
+						<h3 class="text-dark-250 font-semibold text-h4">+48 664 175 003</h3>
 					</div>
 					<div class="flex flex-row gap-3">
 						<div class="ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-						<h3 class="text-dark-250 font-semibold text-h4">kontakt@eupol.pl</h3>
+						<h3 class="text-dark-250 font-semibold text-h4">+48 669 955 685</h3>
+					</div>
+					<div class="flex flex-row gap-3">
+						<div class="ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
+						<h3 class="text-dark-250 font-semibold text-h4">krzysztof.eupol@gmail.com </h3>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="payments" class="py-12 md:py-20 lg:py-26 bg-dark-300">
+	<div class="mx-auto max-w-screen-xl gap-12 md:gap-16 lg:gap-20 flex flex-col px-4 sm:px-8">
+		<div class="grid grid-cols-6 md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
+			<div class="col-span-6 md:col-span-9">
+				<h4 class="font-primary font-semibold text-dark-50">Nasza firma, jako pionier w Gorzycach, wyposażyła wszystkich swoich kierowców w nowoczesne terminale płatnicze. Dzięki temu możemy przyjmować wszystkie dostępne na rynku formy płatności bezgotówkowych, co zapewnia naszym klientom wygodę i bezpieczeństwo podczas podróży.</h4>
+			</div>
+			<div class="col-span-6 md:col-span-3">
+				<enhanced:img src={Payments} alt="Payments image" />
 			</div>
 		</div>
 	</div>
