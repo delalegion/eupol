@@ -3,8 +3,6 @@
 	import Primary from "../buttons/primary.svelte";
 
 	export let form;
-	$: console.log('u:' + form);
-
 </script>
 
 <section id="kontakt" class="py-16 md:py-24 lg:py-32 bg-dark-100">
@@ -87,7 +85,7 @@
 					</div>
 					<div class="flex flex-row gap-3">
 						<div class="ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-						<h3 class="text-dark-250 font-semibold text-h4">krzysztof.eupol@gmail.com </h3>
+						<h3 class="text-dark-250 font-semibold text-h4 break-words">krzysztof.eupol@gmail.com </h3>
 					</div>
 				</div>
 			</div>

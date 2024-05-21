@@ -33,8 +33,12 @@
 		let heightGridContainer: HTMLElement = document.querySelector("#cars-grid-head")!;
 
 		// Set height for scroll grid
-		if (window.screen.width < 600) {
+		if (window.screen.width < 800) {
 			elementSectionPixels = elementSectionCar.offsetWidth * 6 + 600;
+			heightGridContainer.style.height = elementSectionPixels + 'px';
+		}
+		if (window.screen.width < 430) {
+			elementSectionPixels = elementSectionCar.offsetWidth * 6 + 900;
 			heightGridContainer.style.height = elementSectionPixels + 'px';
 		}
 		heightGridContainer.style.height = elementSectionPixels + 'px';
@@ -107,7 +111,7 @@
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">FORD MONDEO</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
 					<div class="mr-2 lg:mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-					<h4 class="text-dark-250 font-medium text-p1 md:text-h3 lg:text-h4">Vignale</h4>
+					<h4 class="text-dark-250 font-medium text-p1 md:text-h4">Vignale</h4>
 				</div>
 			</div>
 
@@ -118,7 +122,7 @@
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">AUDI A6</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
 					<div class="mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-					<h4 class="text-dark-250 font-medium text-p1 md:text-h3 lg:text-h4">Limousine</h4>
+					<h4 class="text-dark-250 font-medium text-p1 md:text-h4">Limousine</h4>
 				</div>
 			</div>
 
@@ -129,7 +133,7 @@
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">FORD TOURNEO</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
 					<div class="mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-					<h4 class="text-dark-250 font-medium text-p1 md:text-h3 lg:text-h4">Custom</h4>
+					<h4 class="text-dark-250 font-medium text-p1 md:text-h4">Custom</h4>
 				</div>
 			</div>
 
@@ -140,7 +144,7 @@
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">FIAT DUCATO</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
 					<div class="mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-					<h4 class="text-dark-250 font-medium text-p1 md:text-h3 lg:text-h4">Plandeka: 4.20x2.10x.2.10H 8 EP</h4>
+					<h4 class="text-dark-250 font-medium text-p1 md:text-h4">Plandeka: 4.20x2.10x.2.10H 8 EP</h4>
 				</div>
 			</div>
 
@@ -151,7 +155,7 @@
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">FIAT DUCATO</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
 					<div class="mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-					<h4 class="text-dark-250 font-medium text-p1 md:text-h3 lg:text-h4">Plandeka: 4.80x2.20x2.35H 10 EP </h4>
+					<h4 class="text-dark-250 font-medium text-p1 md:text-h4">Plandeka: 4.80x2.20x2.35H 10 EP </h4>
 				</div>
 			</div>
 

@@ -35,8 +35,8 @@ export const actions = {
 		const resend = new Resend(import.meta.env.VITE_RESEND);
 
 		const { data, error } = await resend.emails.send({
-			from: 'Acme <onboarding@resend.dev>',
-			to: ['nielotweb@gmail.com'],
+			from: 'kontakt@eupol-przewozy.pl',
+			to: ['krzysztof.eupol@gmail.com'],
 			subject: 'Nowy zapytanie - eupol',
 			html: '<strong>Imię i nazwisko: '+name+' </strong><br/> <strong>Email: '+email+'</strong><br /> <strong>Nr tel.: '+phone+'</strong><br /> <strong>Wiadomość: '+message+'</strong>',
 		});
@@ -44,8 +44,6 @@ export const actions = {
 		if (error) {
 			return console.log({ error });
 		}
-
-		console.log({ data });
 
 		return { success: true };
 	},

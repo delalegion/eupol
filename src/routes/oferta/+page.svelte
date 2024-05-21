@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte";
    import Outline from "../../components/buttons/outline.svelte";
+	import Payments from "$lib/images/payments.webp?enhanced";
 
 	onMount(() => {
 		let menu: HTMLElement = document.querySelector("#menu")!;
@@ -42,12 +43,13 @@
 	<div class="bg-gradient-to-b from-dark-50/90 absolute top-0 right-0 left-0 -z-0 w-full h-28"></div>
 	<div class="mx-auto max-w-screen-xl justify-between content-between h-full flex flex-col px-4 sm:px-8">
 		<navbar class="navbar grid grid-cols-6 md:grid-cols-12 z-10">
-			<div class="bg-primary clip-logo max-w-52 p-4 flex justify-center content-center col-span-3 min-[425px]:col-span-4 md:col-span-2 px-5">
+			<div class="bg-primary clip-logo max-w-52 p-4 flex justify-center content-center col-span-3 min-[425px]:col-span-2 md:col-span-2 px-5">
 				<a href="/" class="font-primary text-h3 xl:text-h2 text-dark-50 font-extrabold select-none">EuPol</a>
 			</div>
-			<div class="h-full border-b-2 border-dark-250/50 w-full min-[425px]:justify-between col-span-3 min-[425px]:col-span-8 md:col-span-10 pl-6 flex content-center justify-end">
-				<div class="py-4 content-center hidden min-[425px]:block">
+			<div class="h-full border-b-2 border-dark-250/50 w-full min-[425px]:justify-between col-span-3 min-[425px]:col-span-4 md:col-span-10 pl-6 flex content-center justify-end">
+				<div class="py-4 content-center hidden min-[425px]:inline-flex flex-col gap-2 justify-center">
 					<a href="tel:+48664175003" class="flex gap-3 font-semibold text-gray-50"><span class="text-primary font-bold">/</span> +48 664 175 003</a>
+					<a href="tel:+48669955685" class="flex gap-3 font-semibold text-gray-50"><span class="text-primary font-bold">/</span> +48 669 955 685</a>
 				</div>
 				<div class="py-2 md:py-4 content-center">
 					<ul id="menu" class="hidden md:flex md:bg-transparent bg-primary p-8 md:p-0 w-full flex-row gap-6 lg:gap-12 flex flex-col absolute left-4 right-4 md:right-0 top-20 md:left-0 md:top-0 md:relative md:flex-row">
@@ -100,16 +102,13 @@
 				<div class="flex flex-col gap-5">
 					<h4 class="text-h4 font-semibold text-dark-50">Taxi Gorzyce</h4>
 					<p class="text-p2 font-semibold text-dark-150 font-primary">
-						Nasze usługi świadczymy o każdej porze dnia i nocy. Gwarantujemy atrakcyjne ceny i szybki transport. Zaufały nam już tysiące klientów, których bezpiecznie dowieźliśmy na miejsce.
+						Nasza firma EuPol działa w branży transportowej od ponad 20 lat. Wszystkim klientom zapewniamy punktualne transporty w każde miejsce i o każdej porze dnia oraz nocy. Nasi dotychczasowi pasażerowie zawsze byli zadowoleni z usług, jakie oferujemy, a wielu z nich regularnie z nich korzysta. Obsługujemy zarówno osoby prywatne, jak i firmy oraz instytucje.
 					</p>
 					<p class="text-p2 font-semibold text-dark-150">
-						Nasza oferta nie ogranicza się jedynie do przewozu osób. Oferujemy również taxi bagażowe, pomoc w drobnych usterkach technicznych i zakupy na telefon.
+						Mamy kilkunastoletnie doświadczenie jako zawodowi kierowcy. Wobec naszych klientów jesteśmy elastyczni i w miarę możliwości zawsze dopasowujemy się do ich oczekiwań. Z tego względu też nie ograniczamy się wyłącznie do transportu osób. Bez problemu przewozimy towary czy przesyłki na życzenie.
 					</p>
 					<p class="text-p2 font-semibold text-dark-150">
-						Zapewniamy pełną dyskrecję Waszych przejazdów. Na trasach poza Gorzycami oraz dla stałych klientówistnieje możliwość negocjacji cen.
-					</p>
-					<p class="text-p2 font-semibold text-dark-150">
-						Oferuje różne formy rozliczeń finansowych. Z każdym z Naszych klientów instytucjonalnych negocjujemy zindywidualizowane i atrakcyjne warunki współpracy.
+						Dbamy o nasze auta, które są w pełni sprawne i mają aktualne badania techniczne. Podczas realizacji kursów zapewniamy miłą atmosferę oraz bezpieczne dotarcie do celu na czas.
 					</p>
 				</div>
 
@@ -119,22 +118,31 @@
 				<div class="flex flex-col gap-5">
 					<h4 class="text-h4 font-semibold text-dark-50">Oferujemy</h4>
 					<ul class="flex flex-col gap-2 list-image-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD6SURBVHgBrdI9DoIwFAfwVxMHNycTNo+gg8462jjoDfQE6gnkJngIQ9xkU2HAG8gGODlLQn1tsCamfPNPSB6P5tc+AKCBXPxF337SDa8J1Iz7WHSjztvFsh8D29UCE+yM5QAvr83iaWVQhQ21k9eCilFhvC9AF18qlIgdUkOFCRC/ziBqRa4T0n1hjMFKhckT8jAGeh4qMUJeKkyA4555JzFZ5qGin2BAmBKTJxxpRwsXr9NQfs/7X4wfAlIiRx5r5kGFSgzDJ8nCxJr/hu1THAuM5LGF/ESUuJnYNCfKH/vmU50Q+I1dEMsMR+2Asmsw20JTcfz5BErmAwspl/QoMUXUAAAAAElFTkSuQmCC')] pl-6">
-						<li>przewóz osób i bagażu</li>
-						<li>dowóz i odbiór dzieci z przedszkoli i szkół (pod troskliwą opieką)</li>
-						<li>obługa wszelkich imprez jak: wesela, chrzciny, rocznice, sympozja, konferencje itp.</li>
-						<li>przyjmowanie zleceń stałych, z wyprzedzeniem (terminowym)</li>
-						<li>wszelkie nietypowe zamówienia w zakresie przewozów</li>
-						<li>drobne zakupy, doręczanie kwiatów i innych prezentów</li>
-						<li>usługi kurierskie (przewożenie, odbieranie wszelkich przesyłek)</li>
-						<li>przewożenie większych bagaży</li>
-						<li>odprowadzanie samochodu klienta</li>
-						<li>uruchamianie samochodu (rozruch silnika)</li>
-						<li>wynajem kierowców</li>
+						<li>Obsługa firm - obsługa biznesowa firm, gości Waszej firmy, a także pracowników, rozwożenie dokumentów czy przesyłek oraz towarów.</li>
+						<li>Wyjazdy służbowe</li>
+						<li>Imprezy zorganizowane</li>
+						<li>Obsługa Wesel</li>
+						<li>Przyjmowanie zleceń stałych, z wyprzedzeniem (terminowym)</li>
+						<li>Odbiór i obsługa gości z lotniska i dworców</li>
+						<li>Przewóz towarów do 3,5T DCM.</li>
 					</ul>
 				</div>
 
 			</div>
 
+		</div>
+	</div>
+</section>
+
+<section id="payments" class="py-12 md:py-20 lg:py-26 bg-dark-300">
+	<div class="mx-auto max-w-screen-xl gap-12 md:gap-16 lg:gap-20 flex flex-col px-4 sm:px-8">
+		<div class="grid grid-cols-6 md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
+			<div class="col-span-6 md:col-span-9">
+				<h4 class="font-primary font-semibold text-dark-50">Nasza firma w Gorzycach, wyposażyła wszystkich swoich kierowców w nowoczesne terminale płatnicze. Dzięki temu możemy przyjmować  dostępne  płatności bezgotówkowych tylko (MasterCard i Visa), co zapewnia naszym klientom wygodę i bezpieczeństwo podczas podróży.</h4>
+			</div>
+			<div class="col-span-6 md:col-span-3">
+				<enhanced:img src={Payments} alt="Payments image" />
+			</div>
 		</div>
 	</div>
 </section>
@@ -166,7 +174,7 @@
 		</div>
 		<div class="flex w-full items-center flex-wrap justify-between mb-8 gap-6">
 			<p class="font-primary text-p2 font-semibold text-dark-150">2024 © Eupol | Wszelkie prawa zastrzeżone.</p>
-			<a href="#" class="font-primary text-p2 font-semibold text-dark-50">Polityka prywatności</a>
+			<a href="/polityka-prywatnosci" class="font-primary text-p2 font-semibold text-dark-50">Polityka prywatności</a>
 			<p class="font-primary text-p2 font-semibold text-dark-150">Projekt oraz wdrożenie strony: <a class="text-dark-50" href="https://www.hubertkruk.pl/">Hubert Kruk</a></p>
 		</div>
 	</div>

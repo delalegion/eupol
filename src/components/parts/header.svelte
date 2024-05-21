@@ -22,8 +22,9 @@
 				<a href="/" class="font-primary text-h3 xl:text-h2 text-dark-50 font-extrabold select-none h-full flex items-center">EuPol</a>
 			</div>
 			<div class="h-full border-b-2 border-dark-250/50 w-full min-[425px]:justify-between col-span-6 min-[425px]:col-span-8 md:col-span-10 pl-6 flex content-center justify-end">
-				<div class="py-4 content-center hidden min-[425px]:block">
+				<div class="py-4 content-center hidden min-[425px]:inline-flex flex-col gap-2 justify-center">
 					<a href="tel:+48664175003" class="flex gap-3 font-semibold text-gray-50"><span class="text-primary font-bold">/</span> +48 664 175 003</a>
+					<a href="tel:+48669955685" class="flex gap-3 font-semibold text-gray-50"><span class="text-primary font-bold">/</span> +48 669 955 685</a>
 				</div>
 				<div class="py-2 md:py-4 content-center">
 					<ul id="menu" class="hidden md:flex md:bg-transparent bg-primary p-8 md:p-0 w-full flex-row gap-6 lg:gap-12 flex flex-col absolute md:right-0 top-20 left-0 md:top-0 md:relative md:flex-row">
@@ -43,8 +44,8 @@
 			</div>
 		</navbar>
 		<section id="jumbotron" class="flex flex-col gap-4 lg:gap-6">
-			<h1 class="text-dark-300 font-primary text-h3 lg:text-h2 xl:text-h1 text-wrap break-words">EuPol - Twój komfort <br />i bezpieczeństwo</h1>
-			<h4 class="text-p1 lg:text-h4 font-primary text-dark-300">Szybkie, wygodne i tanie przejazdy transportowe</h4>
+			<h1 class="text-dark-300 font-primary text-h3 lg:text-h2 xl:text-h1 text-wrap break-words">EuPol - Twój komfort <br/>i bezpieczeństwo</h1>
+			<h4 class="text-p1 lg:text-h4 font-primary text-dark-300">Bezpieczne i wygodne przejazdy transportowe</h4>
 			<div class="flex gap-4 mt-3 flex-wrap">
 				<Primary>Nasze pojazdy</Primary>
 				<Outline>O nas</Outline>
