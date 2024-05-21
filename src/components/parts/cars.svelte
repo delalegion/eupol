@@ -7,6 +7,9 @@
 	import { onMount } from "svelte";
 	import { inview } from "svelte-inview";
 
+	import gsap from "gsap";
+	import {ScrollTrigger} from "gsap/dist/ScrollTrigger"; 
+
 	$: scrollPosition = 0;
 	let isInView: boolean;
 
@@ -27,6 +30,18 @@
 
 	onMount(() => {
 		window.addEventListener('scroll', handleScroll);
+
+		gsap.registerPlugin(ScrollTrigger);
+		gsap.from('#cars-title', {
+			scrollTrigger: {
+				trigger: '#cars-title',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.2,
+			duration: 1,
+			ease: "expo.out",
+		});
 
 		let elementSectionCar: HTMLElement = document.querySelector('.item-car')!;
 		let elementSectionPixels: number = elementSectionCar.offsetWidth * 5 + 400;
@@ -93,7 +108,7 @@
 		<div class="mx-auto max-w-screen-xl gap-20 flex flex-col">
 			<div class="flex flex-row gap-3 justify-center">
 				<div class=" ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-				<h3 class="text-dark-250 font-semibold text-h4 lg:text-h3">Nasza flota</h3>
+				<h3 class="text-dark-250 font-semibold text-h4 lg:text-h3" id="cars-title">Nasza flota</h3>
 			</div>
 		</div>
 

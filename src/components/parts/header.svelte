@@ -3,6 +3,7 @@
 	import { fade } from 'svelte/transition';
 	import Outline from "../buttons/outline.svelte";
 	import Primary from "../buttons/primary.svelte";
+	import { gsap } from "gsap";
 
 	onMount(() => {
 		let menu: HTMLElement = document.querySelector("#menu")!;
@@ -11,13 +12,47 @@
 		btn.addEventListener("click", () => {
 			menu.classList.toggle("hidden");
 	}, false);
+
+		//GSAP
+		gsap.from('#navbar', {
+			scrollTrigger: '#navbar', // start animation when ".box" enters the viewport
+			y: -40,
+			opacity: 0,
+			duration: 1,
+			ease: "expo.out",
+		});
+		gsap.from('#title-1', {
+			scrollTrigger: '#title-1', // start animation when ".box" enters the viewport
+			y: -40,
+			opacity: 0,
+			delay: 0.34,
+			duration: 1,
+			ease: "expo.out",
+		});
+		gsap.from('#title-2', {
+			scrollTrigger: '#title-2', // start animation when ".box" enters the viewport
+			y: -40,
+			opacity: 0,
+			delay: 0.6,
+			duration: 1,
+			ease: "expo.out",
+		});
+		gsap.from('#header-buttons', {
+			scrollTrigger: '#header-buttons', // start animation when ".box" enters the viewport
+			y: -40,
+			opacity: 0,
+			delay: 0.8,
+			duration: 1,
+			ease: "expo.out",
+		});
 	})
+
 </script>
 
 <header id="header" class="h-screen bg-[url('/bg.webp')] bg-cover bg-no-repeat bg-center xl:bg-left pb-24 relative">
 	<div class="bg-gradient-to-b from-dark-50/90 absolute top-0 right-0 left-0 -z-0 w-full h-28"></div>
 	<div class="mx-auto max-w-screen-xl justify-between content-between h-full flex flex-col px-4 sm:px-8">
-		<navbar class="navbar grid grid-cols-12 z-10 min-h-24">
+		<navbar class="navbar grid grid-cols-12 z-10 min-h-24" id="navbar">
 			<div class="bg-primary clip-logo max-w-52 p-4 flex justify-center content-center col-span-6 min-[425px]:col-span-4 md:col-span-2 px-5 max-h-24">
 				<a href="/" class="font-primary text-h3 xl:text-h2 text-dark-50 font-extrabold select-none h-full flex items-center">EuPol</a>
 			</div>
@@ -44,9 +79,9 @@
 			</div>
 		</navbar>
 		<section id="jumbotron" class="flex flex-col gap-4 lg:gap-6">
-			<h1 class="text-dark-300 font-primary text-h3 lg:text-h2 xl:text-h1 text-wrap break-words">EuPol - Twój komfort <br/>i bezpieczeństwo</h1>
-			<h4 class="text-p1 lg:text-h4 font-primary text-dark-300">Bezpieczne i wygodne przejazdy transportowe</h4>
-			<div class="flex gap-4 mt-3 flex-wrap">
+			<h1 class="text-dark-300 font-primary text-h3 lg:text-h2 xl:text-h1 text-wrap break-words" id="title-1">EuPol - Twój komfort <br/>i bezpieczeństwo</h1>
+			<h4 class="text-p1 lg:text-h4 font-primary text-dark-300" id="title-2">Bezpieczne i wygodne przejazdy transportowe</h4>
+			<div class="flex gap-4 mt-3 flex-wrap" id="header-buttons">
 				<Primary>Nasze pojazdy</Primary>
 				<Outline>O nas</Outline>
 			</div>

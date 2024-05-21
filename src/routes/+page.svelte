@@ -1,6 +1,6 @@
-<script lang="ts">
-    import { enhance } from "$app/forms";
-    import Primary from "../components/buttons/primary.svelte";
+<script>
+	import { enhance } from "$app/forms";
+	import Primary from "../components/buttons/primary.svelte";
 	import About from "../components/parts/about.svelte";
 	import Cars from "../components/parts/cars.svelte";
 	import Contact from "../components/parts/contact.svelte";
@@ -8,6 +8,66 @@
 	import Header from "../components/parts/header.svelte";
 	import Offer from "../components/parts/offer.svelte";
 	import Payments from "$lib/images/payments.webp?enhanced";
+	import { onMount } from "svelte";
+	import gsap from "gsap";
+	import {ScrollTrigger} from "gsap/dist/ScrollTrigger"; 
+
+	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger)
+
+		gsap.from('#info-text', {
+			scrollTrigger: {
+				trigger: '#info-text',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.2,
+			duration: 1,
+			ease: "expo.out",
+		});
+		gsap.from('#contact-title', {
+			scrollTrigger: {
+				trigger: '#contact-title',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.2,
+			duration: 1,
+			ease: "expo.out",
+		});
+		gsap.from('.inp', {
+			scrollTrigger: {
+				trigger: '.inp',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.2,
+			duration: 1,
+			ease: "expo.out",
+			stagger: 0.15
+		});
+		gsap.from('.cont', {
+			scrollTrigger: {
+				trigger: '.cont',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.4,
+			duration: 1,
+			ease: "expo.out",
+			stagger: 0.15
+		});
+		gsap.from('#payments-title', {
+			scrollTrigger: {
+				trigger: '#payments-title',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.2,
+			duration: 1,
+			ease: "expo.out",
+		});
+	});
 
 	export let form;
 </script>
@@ -46,7 +106,7 @@
 
 <section id="info" class="bg-[url('/bginfo.webp')] bg-cover bg-no-repeat bg-center py-24 md:py-36 lg:py-42 px-2 relative">
 	<div class="mx-auto max-w-screen-xl px-4 sm:px-8 gap-12 md:gap-16 lg:gap-20 flex flex-col">
-		<h4 class="font-semibold font-primary text-dark-300 text-p1 md:text-h4 text-center">Transport to nasza specjalizacja już od blisko 20 lat. Potrzebujesz fachowej pomocy w kwestii organizacji transportu? Szukasz doświadczonej firmy , która dostarczy twoich klientów jak i towary na czas, bez komplikacji i z zachowaniem najwyższych standardów transportowych. Firma EuPol oferuje profesjonalne usługi transportowe osób oraz towarów. Nasz zespół zorganizuje transport uwzględniając wszystkie Twoje potrzeby takie jak czas, bezpieczeństwo i prywatność.</h4>
+		<h4 class="font-semibold font-primary text-dark-300 text-p1 md:text-h4 text-center" id="info-text">Transport to nasza specjalizacja już od blisko 20 lat. Potrzebujesz fachowej pomocy w kwestii organizacji transportu? Szukasz doświadczonej firmy , która dostarczy twoich klientów jak i towary na czas, bez komplikacji i z zachowaniem najwyższych standardów transportowych. Firma EuPol oferuje profesjonalne usługi transportowe osób oraz towarów. Nasz zespół zorganizuje transport uwzględniając wszystkie Twoje potrzeby takie jak czas, bezpieczeństwo i prywatność.</h4>
 	</div>
 </section>
 
@@ -58,7 +118,7 @@
 	<div class="mx-auto max-w-screen-xl px-4 sm:px-8 gap-12 md:gap-16 lg:gap-20 flex flex-col">
 		<div class="flex flex-row gap-3">
 			<div class=" ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-			<h3 class="text-dark-250 font-semibold text-h4 lg:text-h3">Pytania? Napisz do nas!</h3>
+			<h3 class="text-dark-250 font-semibold text-h4 lg:text-h3" id="contact-title">Pytania? Napisz do nas!</h3>
 		</div>
 		<div class="grid grid-cols-6 lg:grid-cols-12 gap-12 md:gap-16 lg:gap-20">
 			{#if form?.success}<p class="w-full p-4 bg-green-600 rounded-lg text-gray-200 col-span-6 lg:col-span-12">Wiadomość wysłana. Odpowiemy jak najszybciej będzie to mozliwe. W razie potrzeby szybkiego kontaktu zapraszamy dzwonić na podany numer telefonu.</p>{/if}
@@ -70,7 +130,7 @@
 			<form method="POST" class="col-span-6 lg:col-span-9 flex flex-col gap-10" use:enhance>
 				<div class="flex flex-col lg:flex-row gap-8">
 
-					<div class="relative h-11 w-full min-w-[200px]">
+					<div class="relative h-11 w-full min-w-[200px] inp">
 						<input placeholder="Imię i nazwisko" name="name"
 						  class="peer h-full w-full border-b border-dark-150 bg-transparent pt-4 pb-6 font-primary font-bold text-h4 font-normal text-dark-300 outline outline-0 transition-all placeholder-shown:border-blue-dark-150 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100" />
 						<label
@@ -78,7 +138,7 @@
 						  Imię i nazwisko
 						</label>
 					 </div>
-					 <div class="relative h-11 w-full min-w-[200px]">
+					 <div class="relative h-11 w-full min-w-[200px] inp">
 						<input placeholder="Numer telefonu" name="phone"
 						  class="peer h-full w-full border-b border-dark-150 bg-transparent pt-4 pb-6 font-primary font-bold text-h4 font-normal text-dark-300 outline outline-0 transition-all placeholder-shown:border-blue-dark-150 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100" />
 						<label
@@ -88,7 +148,7 @@
 					 </div>
 
 				</div>
-				<div class="relative h-11 w-full min-w-[200px]">
+				<div class="relative h-11 w-full min-w-[200px] inp">
 					<input placeholder="Adres" type="email" name="email"
 					  class="peer h-full w-full border-b border-dark-150 bg-transparent pt-4 pb-6 font-primary font-bold text-h4 font-normal text-dark-300 outline outline-0 transition-all placeholder-shown:border-blue-dark-150 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100" />
 					<label
@@ -96,7 +156,7 @@
 					  Adres email
 					</label>
 				 </div>
-				 <div class="relative w-full min-w-[200px] -mt-4">
+				 <div class="relative w-full min-w-[200px] -mt-4 inp">
 					<textarea name="message"
 					  class="peer h-full min-h-[150px] w-full resize-none border-b border-dark-150 bg-transparent pt-4 pb-6 font-primary font-bold text-h4 font-normal text-dark-300 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:resize-none disabled:border-0 disabled:bg-blue-gray-50"
 					  placeholder=""></textarea>
@@ -106,7 +166,7 @@
 					</label>
 				 </div>
 
-				 <div class="inline-flex items-center -mt-4 -ml-2">
+				 <div class="inline-flex items-center -mt-4 -ml-2 inp">
 					<label class="relative flex items-center p-2 rounded-full cursor-pointer" for="checkbox">
 					  <input type="checkbox" name="checkbox"
 						 class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:bg-primary checked:before:bg-gray-900 hover:before:opacity-10"
@@ -126,21 +186,21 @@
 					 </label>
 				 </div> 
 
-				 <div class="inline-flex">
+				 <div class="inline-flex inp">
 					<Primary oftype="submit">Wyślij wiadomość</Primary>
 				 </div>
 			</form>
 			<div class="col-span-6 lg:col-span-3">
 				<div class="flex flex-col gap-8">
-					<div class="flex flex-row gap-3">
+					<div class="flex flex-row gap-3 cont">
 						<div class="ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
 						<h3 class="text-dark-250 font-semibold text-h4">+48 664 175 003</h3>
 					</div>
-					<div class="flex flex-row gap-3">
+					<div class="flex flex-row gap-3 cont">
 						<div class="ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
 						<h3 class="text-dark-250 font-semibold text-h4">+48 669 955 685</h3>
 					</div>
-					<div class="flex flex-row gap-3">
+					<div class="flex flex-row gap-3 cont">
 						<div class="ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
 						<h3 class="text-dark-250 font-semibold text-h4">krzysztof.eupol@gmail.com </h3>
 					</div>
@@ -154,7 +214,7 @@
 	<div class="mx-auto max-w-screen-xl gap-12 md:gap-16 lg:gap-20 flex flex-col px-4 sm:px-8">
 		<div class="grid grid-cols-6 md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
 			<div class="col-span-6 md:col-span-9">
-				<h4 class="font-primary font-semibold text-dark-50">Nasza firma w Gorzycach, wyposażyła wszystkich swoich kierowców w nowoczesne terminale płatnicze. Dzięki temu możemy przyjmować  dostępne  płatności bezgotówkowych tylko (MasterCard i Visa), co zapewnia naszym klientom wygodę i bezpieczeństwo podczas podróży.</h4>
+				<h4 class="font-primary font-semibold text-dark-50" id="payments-title">Nasza firma w Gorzycach, wyposażyła wszystkich swoich kierowców w nowoczesne terminale płatnicze. Dzięki temu możemy przyjmować  dostępne  płatności bezgotówkowych tylko (MasterCard i Visa), co zapewnia naszym klientom wygodę i bezpieczeństwo podczas podróży.</h4>
 			</div>
 			<div class="col-span-6 md:col-span-3">
 				<enhanced:img src={Payments} alt="Payments image" />

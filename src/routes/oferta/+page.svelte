@@ -3,6 +3,65 @@
    import Outline from "../../components/buttons/outline.svelte";
 	import Payments from "$lib/images/payments.webp?enhanced";
 
+	import gsap from "gsap";
+	import {ScrollTrigger} from "gsap/dist/ScrollTrigger"; 
+
+	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger)
+
+		gsap.from('#payments-title', {
+			scrollTrigger: {
+				trigger: '#payments-title',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.2,
+			duration: 1,
+			ease: "expo.out",
+		});
+		gsap.from('#main-title', {
+			scrollTrigger: {
+				trigger: '#main-title',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.2,
+			duration: 1,
+			ease: "expo.out",
+		});
+		gsap.from('#offer-title', {
+			scrollTrigger: {
+				trigger: '#offer-title',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.2,
+			duration: 1,
+			ease: "expo.out",
+		});
+		gsap.from('.off-p', {
+			scrollTrigger: {
+				trigger: '.off-p',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.2,
+			duration: 1,
+			ease: "expo.out",
+			stagger: 0.15
+		});
+		gsap.from('.li', {
+			scrollTrigger: {
+				trigger: '.li',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.2,
+			duration: 1,
+			ease: "expo.out",
+			stagger: 0.15
+		});
+	});
 	onMount(() => {
 		let menu: HTMLElement = document.querySelector("#menu")!;
 		let btn: HTMLButtonElement = document.querySelector("#btn-menu")!;
@@ -69,7 +128,7 @@
 			</div>
 		</navbar>
 		<section id="jumbotron" class="flex flex-col gap-4 lg:gap-6 mt-16">
-			<h1 class="text-dark-300 font-primary text-h3 lg:text-h2 xl:text-h1 text-wrap break-words">Oferta</h1>
+			<h1 class="text-dark-300 font-primary text-h3 lg:text-h2 xl:text-h1 text-wrap break-words" id="main-title">Oferta</h1>
 			<div class="flex w-full justify-end mt-2">
 				<div class="flex gap-4">
 					<div class="p-4 rounded-full bg-[#EAEAEA]/20 w-14 h-14 flex justify-center content-center hover:bg-[#EAEAEA]/30 hover:cursor-pointer active:scale-95 hover:translate-y-0.5 duration-200">
@@ -94,20 +153,20 @@
 	<div class="mx-auto max-w-screen-xl gap-12 md:gap-16 lg:gap-20 flex flex-col px-4 sm:px-8">
 		<div class="flex flex-row gap-3 justify-center">
 			<div class="ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-			<h3 class="text-dark-50 font-semibold text-h4 lg:text-h3">Oferta</h3>
+			<h3 class="text-dark-50 font-semibold text-h4 lg:text-h3" id="offer-title">Oferta</h3>
 		</div>
 		<div class="grid grid-cols-6 md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
 			<div class="col-span-6 flex flex-col gap-4">
 
 				<div class="flex flex-col gap-5">
-					<h4 class="text-h4 font-semibold text-dark-50">Taxi Gorzyce</h4>
-					<p class="text-p2 font-semibold text-dark-150 font-primary">
+					<h4 class="text-h4 font-semibold text-dark-50 off-p">Taxi Gorzyce</h4>
+					<p class="text-p2 font-semibold text-dark-150 font-primary off-p">
 						Nasza firma EuPol działa w branży transportowej od ponad 20 lat. Wszystkim klientom zapewniamy punktualne transporty w każde miejsce i o każdej porze dnia oraz nocy. Nasi dotychczasowi pasażerowie zawsze byli zadowoleni z usług, jakie oferujemy, a wielu z nich regularnie z nich korzysta. Obsługujemy zarówno osoby prywatne, jak i firmy oraz instytucje.
 					</p>
-					<p class="text-p2 font-semibold text-dark-150">
+					<p class="text-p2 font-semibold text-dark-150 off-p">
 						Mamy kilkunastoletnie doświadczenie jako zawodowi kierowcy. Wobec naszych klientów jesteśmy elastyczni i w miarę możliwości zawsze dopasowujemy się do ich oczekiwań. Z tego względu też nie ograniczamy się wyłącznie do transportu osób. Bez problemu przewozimy towary czy przesyłki na życzenie.
 					</p>
-					<p class="text-p2 font-semibold text-dark-150">
+					<p class="text-p2 font-semibold text-dark-150 off-p">
 						Dbamy o nasze auta, które są w pełni sprawne i mają aktualne badania techniczne. Podczas realizacji kursów zapewniamy miłą atmosferę oraz bezpieczne dotarcie do celu na czas.
 					</p>
 				</div>
@@ -118,13 +177,13 @@
 				<div class="flex flex-col gap-5">
 					<h4 class="text-h4 font-semibold text-dark-50">Oferujemy</h4>
 					<ul class="flex flex-col gap-2 list-image-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD6SURBVHgBrdI9DoIwFAfwVxMHNycTNo+gg8462jjoDfQE6gnkJngIQ9xkU2HAG8gGODlLQn1tsCamfPNPSB6P5tc+AKCBXPxF337SDa8J1Iz7WHSjztvFsh8D29UCE+yM5QAvr83iaWVQhQ21k9eCilFhvC9AF18qlIgdUkOFCRC/ziBqRa4T0n1hjMFKhckT8jAGeh4qMUJeKkyA4555JzFZ5qGin2BAmBKTJxxpRwsXr9NQfs/7X4wfAlIiRx5r5kGFSgzDJ8nCxJr/hu1THAuM5LGF/ESUuJnYNCfKH/vmU50Q+I1dEMsMR+2Asmsw20JTcfz5BErmAwspl/QoMUXUAAAAAElFTkSuQmCC')] pl-6">
-						<li>Obsługa firm - obsługa biznesowa firm, gości Waszej firmy, a także pracowników, rozwożenie dokumentów czy przesyłek oraz towarów.</li>
-						<li>Wyjazdy służbowe</li>
-						<li>Imprezy zorganizowane</li>
-						<li>Obsługa Wesel</li>
-						<li>Przyjmowanie zleceń stałych, z wyprzedzeniem (terminowym)</li>
-						<li>Odbiór i obsługa gości z lotniska i dworców</li>
-						<li>Przewóz towarów do 3,5T DCM.</li>
+						<li class="li">Obsługa firm - obsługa biznesowa firm, gości Waszej firmy, a także pracowników, rozwożenie dokumentów czy przesyłek oraz towarów.</li>
+						<li class="li">Wyjazdy służbowe</li>
+						<li class="li">Imprezy zorganizowane</li>
+						<li class="li">Obsługa Wesel</li>
+						<li class="li">Przyjmowanie zleceń stałych, z wyprzedzeniem (terminowym)</li>
+						<li class="li">Odbiór i obsługa gości z lotniska i dworców</li>
+						<li class="li">Przewóz towarów do 3,5T DCM.</li>
 					</ul>
 				</div>
 
@@ -138,7 +197,7 @@
 	<div class="mx-auto max-w-screen-xl gap-12 md:gap-16 lg:gap-20 flex flex-col px-4 sm:px-8">
 		<div class="grid grid-cols-6 md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
 			<div class="col-span-6 md:col-span-9">
-				<h4 class="font-primary font-semibold text-dark-50">Nasza firma w Gorzycach, wyposażyła wszystkich swoich kierowców w nowoczesne terminale płatnicze. Dzięki temu możemy przyjmować  dostępne  płatności bezgotówkowych tylko (MasterCard i Visa), co zapewnia naszym klientom wygodę i bezpieczeństwo podczas podróży.</h4>
+				<h4 class="font-primary font-semibold text-dark-50" id="payments-title">Nasza firma w Gorzycach, wyposażyła wszystkich swoich kierowców w nowoczesne terminale płatnicze. Dzięki temu możemy przyjmować  dostępne  płatności bezgotówkowych tylko (MasterCard i Visa), co zapewnia naszym klientom wygodę i bezpieczeństwo podczas podróży.</h4>
 			</div>
 			<div class="col-span-6 md:col-span-3">
 				<enhanced:img src={Payments} alt="Payments image" />

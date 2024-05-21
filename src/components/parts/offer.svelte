@@ -1,11 +1,43 @@
+<script>
+	import { onMount } from "svelte";
+	import gsap from "gsap";
+	import {ScrollTrigger} from "gsap/dist/ScrollTrigger"; 
+
+	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger)
+
+		gsap.from('#offer-title', {
+			scrollTrigger: {
+				trigger: '#offer-title',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.2,
+			duration: 1,
+			ease: "expo.out",
+		});
+		gsap.from('.box', {
+			scrollTrigger: {
+				trigger: '.box',
+			},
+			y: -40,
+			opacity: 0,
+			delay: 0.4,
+			duration: 1,
+			ease: "expo.out",
+			stagger: 0.15
+		});
+	});
+</script>
+
 <section id="offer" class="py-16 md:py-24 lg:py-32 bg-dark-300">
 	<div class="mx-auto max-w-screen-xl gap-12 md:gap-16 lg:gap-20 flex flex-col px-4 sm:px-8">
 		<div class="flex flex-row gap-3 justify-center">
 			<div class="ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-			<h3 class="text-dark-50 font-semibold text-h4 lg:text-h3">Zapewniamy</h3>
+			<h3 class="text-dark-50 font-semibold text-h4 lg:text-h3" id="offer-title">Zapewniamy</h3>
 		</div>
 		<div class="grid grid-cols-6 md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
-			<div class="col-span-6 sm:col-span-3 flex flex-col gap-4 text-center justify-center">
+			<div class="col-span-6 sm:col-span-3 flex flex-col gap-4 text-center justify-center box">
 
 				<div class="h-28 flex max-h-28 justify-center">
 					<svg width="145" height="108" viewBox="0 0 145 108" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +51,7 @@
 				</div>
 
 			</div>
-			<div class="col-span-6 sm:col-span-3 flex flex-col gap-4 text-center justify-center">
+			<div class="col-span-6 sm:col-span-3 flex flex-col gap-4 text-center justify-center box">
 
 				<div class="h-28 max-h-28 justify-center flex">
 					<svg width="117" height="108" viewBox="0 0 117 108" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +66,7 @@
 				</div>
 
 			</div>
-			<div class="col-span-6 sm:col-span-3 flex flex-col gap-4 text-center justify-center">
+			<div class="col-span-6 sm:col-span-3 flex flex-col gap-4 text-center justify-center box">
 
 				<div class="h-28 max-h-28 justify-center flex">
 					<svg width="145" height="108" viewBox="0 0 145 108" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +86,7 @@
 				</div>
 
 			</div>
-			<div class="col-span-6 sm:col-span-3 flex flex-col gap-4 text-center justify-center">
+			<div class="col-span-6 sm:col-span-3 flex flex-col gap-4 text-center justify-center box">
 
 				<div class="h-28 max-h-28 justify-center flex">
 					<svg width="145" height="108" viewBox="0 0 145 108" fill="none" xmlns="http://www.w3.org/2000/svg">
