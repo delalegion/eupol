@@ -116,7 +116,7 @@
 						<li class="content-center"><a href="/oferta" class="font-semibold text-dark-50 md:text-gray-50 text-p1">OFERTA</a></li>
 						<li class="content-center"><a href="/#flota" class="font-semibold text-dark-50 md:text-gray-50 text-p1">NASZA FLOTA</a></li>
 						<li class="content-center flex md:hidden"><a href="/#kontakt" class="font-semibold text-dark-50 md:text-gray-50 text-p1">KONTAKT</a></li>
-						<li class="hidden md:flex"><Outline size="small" link="#kontakt">Kontakt</Outline></li>
+						<li class="hidden md:flex"><Outline size="small" link="/#kontakt">Kontakt</Outline></li>
 					</ul>
                <button data-collapse-toggle="navbar-default" type="button" id="btn-menu" class="inline-flex bg-[#EAEAEA]/20 items-center p-4 w-16 h-16 justify-center text-sm text-gray-50 rounded-full md:hidden hover:bg-[#EAEAEA]/30 active:scale-95 hover:translate-y-0.5 duration-200 focus:outline-none dark:text-gray-50 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                   <span class="sr-only">Open main menu</span>
@@ -159,15 +159,15 @@
 			<div class="col-span-6 flex flex-col gap-4">
 
 				<div class="flex flex-col gap-5">
-					<h4 class="text-h4 font-semibold text-dark-50 off-p">Taxi Gorzyce</h4>
+					<h4 class="text-h4 font-semibold text-dark-50 off-p">EuPoL</h4>
 					<p class="text-p2 font-semibold text-dark-150 font-primary off-p">
 						Nasza firma EuPol działa w branży transportowej od ponad 20 lat. Wszystkim klientom zapewniamy punktualne transporty w każde miejsce i o każdej porze dnia oraz nocy. Nasi dotychczasowi pasażerowie zawsze byli zadowoleni z usług, jakie oferujemy, a wielu z nich regularnie z nich korzysta. Obsługujemy zarówno osoby prywatne, jak i firmy oraz instytucje.
 					</p>
 					<p class="text-p2 font-semibold text-dark-150 off-p">
-						Mamy kilkunastoletnie doświadczenie jako zawodowi kierowcy. Wobec naszych klientów jesteśmy elastyczni i w miarę możliwości zawsze dopasowujemy się do ich oczekiwań. Z tego względu też nie ograniczamy się wyłącznie do transportu osób. Bez problemu przewozimy towary czy przesyłki na życzenie.
+						Mamy kilkunastoletnie doświadczenie jako zawodowi kierowcy. Wobec naszych klientów jesteśmy elastyczni i w miarę możliwości zawsze dopasowujemy się do ich oczekiwań. Z tego względu też nie ograniczamy się wyłącznie do transportu osób, bez problemu przewozimy towary czy przesyłki na życzenie.
 					</p>
 					<p class="text-p2 font-semibold text-dark-150 off-p">
-						Dbamy o nasze auta, które są w pełni sprawne i mają aktualne badania techniczne. Podczas realizacji kursów zapewniamy miłą atmosferę oraz bezpieczne dotarcie do celu na czas.
+						Podczas realizacji kursów zapewniamy miłą atmosferę oraz bezpieczne dotarcie do celu na czas.
 					</p>
 				</div>
 
@@ -177,7 +177,7 @@
 				<div class="flex flex-col gap-5">
 					<h4 class="text-h4 font-semibold text-dark-50">Oferujemy</h4>
 					<ul class="flex flex-col gap-2 list-image-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD6SURBVHgBrdI9DoIwFAfwVxMHNycTNo+gg8462jjoDfQE6gnkJngIQ9xkU2HAG8gGODlLQn1tsCamfPNPSB6P5tc+AKCBXPxF337SDa8J1Iz7WHSjztvFsh8D29UCE+yM5QAvr83iaWVQhQ21k9eCilFhvC9AF18qlIgdUkOFCRC/ziBqRa4T0n1hjMFKhckT8jAGeh4qMUJeKkyA4555JzFZ5qGin2BAmBKTJxxpRwsXr9NQfs/7X4wfAlIiRx5r5kGFSgzDJ8nCxJr/hu1THAuM5LGF/ESUuJnYNCfKH/vmU50Q+I1dEMsMR+2Asmsw20JTcfz5BErmAwspl/QoMUXUAAAAAElFTkSuQmCC')] pl-6">
-						<li class="li">Obsługa firm - obsługa biznesowa firm, gości Waszej firmy, a także pracowników, rozwożenie dokumentów czy przesyłek oraz towarów.</li>
+						<li class="li">Obsługa firm - obsługa biznesowa firm</li>
 						<li class="li">Wyjazdy służbowe</li>
 						<li class="li">Imprezy zorganizowane</li>
 						<li class="li">Obsługa Wesel</li>
@@ -197,7 +197,7 @@
 	<div class="mx-auto max-w-screen-xl gap-12 md:gap-16 lg:gap-20 flex flex-col px-4 sm:px-8">
 		<div class="grid grid-cols-6 md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
 			<div class="col-span-6 md:col-span-9">
-				<h4 class="font-primary font-semibold text-dark-50" id="payments-title">Nasza firma w Gorzycach, wyposażyła wszystkich swoich kierowców w nowoczesne terminale płatnicze. Dzięki temu możemy przyjmować  dostępne  płatności bezgotówkowych tylko (MasterCard i Visa), co zapewnia naszym klientom wygodę i bezpieczeństwo podczas podróży.</h4>
+				<h4 class="font-primary font-semibold text-dark-50" id="payments-title">Nasza firma w Gorzycach, wyposażyła wszystkich swoich kierowców w nowoczesne terminale płatnicze. Dzięki temu możemy przyjmować  dostępne  płatności bezgotówkowe MasterCard i Visa, co zapewnia naszym klientom wygodę i bezpieczeństwo podczas podróży.</h4>
 			</div>
 			<div class="col-span-6 md:col-span-3">
 				<enhanced:img src={Payments} alt="Payments image" />

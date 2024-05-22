@@ -55,7 +55,7 @@
 						<li class="content-center"><a href="/oferta" class="font-semibold text-dark-50 md:text-gray-50 text-p1">OFERTA</a></li>
 						<li class="content-center"><a href="/#flota" class="font-semibold text-dark-50 md:text-gray-50 text-p1">NASZA FLOTA</a></li>
 						<li class="content-center flex md:hidden"><a href="/#kontakt" class="font-semibold text-dark-50 md:text-gray-50 text-p1">KONTAKT</a></li>
-						<li class="hidden md:flex"><Outline size="small" link="#kontakt">Kontakt</Outline></li>
+						<li class="hidden md:flex"><Outline size="small" link="/#kontakt">Kontakt</Outline></li>
 					</ul>
                <button data-collapse-toggle="navbar-default" type="button" id="btn-menu" class="inline-flex bg-[#EAEAEA]/20 items-center p-4 w-16 h-16 justify-center text-sm text-gray-50 rounded-full md:hidden hover:bg-[#EAEAEA]/30 active:scale-95 hover:translate-y-0.5 duration-200 focus:outline-none dark:text-gray-50 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                   <span class="sr-only">Open main menu</span>
@@ -76,117 +76,106 @@
 			<h3 class="text-dark-50 font-semibold text-h4 lg:text-h3">Polityka prywatności</h3>
          <h4 class="text-dark-50 font-semibold text-h5 lg:text-h4">Polityka prywatności opisuje zasady przetwarzania przez nas informacji na Twój temat, w tym danych osobowych oraz ciasteczek, czyli tzw. cookies.</h4>
          <div class="mt-4">
-            <h2 class="pb-6 pt-6"><strong>1. Informacje ogólne</strong></h2>
-               <ol>
-                  <li>Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod adresem url: <b>eupol-przewozy.pl</b></li>
-                  <li>Operatorem serwisu oraz Administratorem danych osobowych jest: F.H.U EuPol Krzysztof Kokosza Porucznika Sarny 1/58, 39-432 Gorzyce</li>
-                  <li>Adres kontaktowy poczty elektronicznej operatora: kuba.kokosza@op.pl</li>  
-                  <li>Operator jest Administratorem Twoich danych osobowych w odniesieniu do danych podanych dobrowolnie w Serwisie.</li>
-                  <li>Serwis wykorzystuje dane osobowe w następujących celach:</li>
-               </ol>
-               <ul style="list-style: lower-alpha;"><li>Obsługa zapytań przez formularz</li>
+            <section>
+                <h2 class="pb-6 pt-6 font-semibold">1. Administrator danych osobowych</h2>
+        
+                <p>Administratorem danych osobowych zbieranych za pomocą formularza kontaktowego na stronie internetowej jest F.H.U EuPol Krzysztof Kokosza (NIP: 8671014915, REGON: 180779268), z siedzibą na ul.Porucznika Sarny 1/58 39-432 Gorzyce. Dane kontaktowe: email: krzysztof.eupol@gmail.com, numery telefonów: +48 664 175 003 / +48 669 955 685</p>
+            </section>
+        
+            <section>
+                <h2 class="pb-6 pt-6 font-semibold">2. Dane osobowe zbierane za pomocą formularza kontaktowego</h2>
+        
+                <p>Podczas korzystania z formularza kontaktowego na stronie internetowej zbieramy następujące dane osobowe:</p>
+        
+                <ul>
+                    <li>Imię i nazwisko</li>
+                    <li>Adres email</li>
+                    <li>Numer telefonu</li>
+                    <li>Treść wiadomości</li>
+                </ul>
+            </section>
+        
+            <section>
+                <h2 class="pb-6 pt-6 font-semibold">3. Cel przetwarzania danych osobowych</h2>
+        
+                <p>Dane osobowe zbierane za pomocą formularza kontaktowego są przetwarzane w celu:</p>
+        
+                <ul>
+                    <li>Udzielenia odpowiedzi na wiadomość wysłaną przez użytkownika</li>
+                    <li>Kontakt z użytkownikiem w celu realizacji usługi taksówkowej</li>
+                </ul>
+            </section>
+        
+            <section>
+                <h2 class="pb-6 pt-6 font-semibold">4. Podstawa prawna przetwarzania danych osobowych</h2>
+        
+                <p>Dane osobowe zbierane za pomocą formularza kontaktowego są przetwarzane na podstawie:</p>
+        
+                <ul>
+                    <li>Art. 6 ust. 1 lit. a) RODO – zgoda użytkownika</li>
+                    <li>Art. 6 ust. 1 lit. f) RODO – prawnie uzasadniony interes administratora (realizacja usługi taksówkowej)</li>
+                </ul>
+            </section>
+        
+            <section>
+                <h2 class="pb-6 pt-6 font-semibold">5. Odbiorcy danych osobowych</h2>
+        
+                <p>Dane osobowe zbierane za pomocą formularza kontaktowego mogą być przekazywane następującym kategoriom odbiorców:</p>
+        
+                <ul>
+                    <li>Dostawcom usług IT, zapewniającym obsługę strony internetowej i poczty elektronicznej</li>
+                    <li>Organom państwowym, na ich żądanie, w celu realizacji obowiązków prawnych</li>
+                </ul>
+            </section>
+        
+            <section>
+                <h2 class="pb-6 pt-6 font-semibold">6. Przekazywanie danych osobowych do państw trzecich</h2>
+        
+                <p>Dane osobowe zbierane za pomocą formularza kontaktowego są przekazywane do Stanów Zjednoczonych Ameryki, gdzie znajduje się serwer serwisu Resend, w którym przechowywane są dane. Resend jest certyfikowany przez Privacy Shield, co oznacza, że zapewnia on odpowiednią ochronę danych osobowych zgodnie z RODO.</p>
+            </section>
+        
+            <section>
+                <h2 class="pb-6 pt-6 font-semibold">7. Okres przechowywania danych osobowych</h2>
+        
+                <p>Dane osobowe zbierane za pomocą formularza kontaktowego są przechowywane przez okres niezbędny do udzielenia odpowiedzi na wiadomość wysłaną przez użytkownika oraz realizacji usługi taksówkowej, a następnie przez okres 5 lat w celach archiwalnych.</p>
+            </section>
+        
+            <section>
+                <h2 class="pb-6 pt-6 font-semibold">8. Prawa użytkownika</h2>
+        
+                <p>Użytkownikowi przysługują następujące prawa związane z przetwarzaniem jego danych osobowych:</p>
+        
+                <ul>
+                    <li>Prawo dostępu do swoich danych osobowych</li>
+                    <li>Prawo do sprostowania swoich danych osobowych</li>
+                    <li>Prawo do usunięcia swoich danych osobowych</li>
+                    <li>Prawo do ograniczenia przetwarzania swoich danych osobowych</li>
+                    <li>Prawo do przenoszenia swoich danych osobowych</li>
                </ul>
-               <li>Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich zachowaniu w następujący sposób:
-               <ol style="list-style: lower-alpha;">
-               <li>Poprzez dobrowolnie wprowadzone w formularzach dane, które zostają wprowadzone do systemów Operatora.</li>
-               <li>Poprzez zapisywanie w urządzeniach końcowych plików cookie (tzw. „ciasteczka”).</li>
-               </ol>
-               </li>
-               <h2 class="pb-6 pt-6"><strong>2. Wybrane metody ochrony danych stosowane przez Operatora</strong></h2>
-               <ol><li>Miejsca logowania i wprowadzania danych osobowych są chronione w warstwie transmisji (certyfikat SSL). Dzięki temu dane osobowe i dane logowania, wprowadzone na stronie, zostają zaszyfrowane w komputerze użytkownika i mogą być odczytane jedynie na docelowym serwerze.</li><li>W celu ochrony danych Operator regularnie wykonuje kopie bezpieczeństwa.</li><li>Istotnym elementem ochrony danych jest regularna aktualizacja wszelkiego oprogramowania, wykorzystywanego przez Operatora do przetwarzania danych osobowych, co w szczególności oznacza regularne aktualizacje komponentów programistycznych.</li>
-               </ol>
-               <h2 class="pb-6 pt-6"><strong>3. Hosting</strong></h2>
-               <ol>
-               <li>Serwis jest hostowany (technicznie utrzymywany) na serwerach operatora: Vercel Inc.
-
-                  Siedziba: San Francisco, Kalifornia, Stany Zjednoczone
-                  
-                  Adres: 450 Townsend Street, Suite 200, San Francisco, CA 94103, USA
-                  
-                  Strona internetowa: https://vercel.com/</li>
+            </section>    
             
-                  <li>Firma hostingowa w celu zapewnienia niezawodności technicznej prowadzi logi na poziomie serwera. Zapisowi mogą podlegać:
-                     <ul style="list-style: lower-alpha;">
-                     <li>zasoby określone identyfikatorem URL (adresy żądanych zasobów – stron, plików),</li>
-                     <li>czas nadejścia zapytania,</li>
-                     <li>czas wysłania odpowiedzi,</li>
-                     <li>nazwę stacji klienta – identyfikacja realizowana przez protokół HTTP,</li>
-                     <li>informacje o błędach jakie nastąpiły przy realizacji transakcji HTTP,</li>
-                     <li>adres URL strony poprzednio odwiedzanej przez użytkownika (referer link) – w przypadku gdy przejście do Serwisu nastąpiło przez odnośnik,</li>
-                     <li>informacje o przeglądarce użytkownika,</li>
-                     <li>informacje o adresie IP,</li>
-                     <li>informacje diagnostyczne związane z procesem samodzielnego zamawiania usług poprzez rejestratory na stronie,</li>
-                     <li>informacje związane z obsługą poczty elektronicznej kierowanej do Operatora oraz wysyłanej przez Operatora.</li>
-                     </ul>
-                  </li>
-               </ol>
-               <h2 class="pb-6 pt-6"><strong>4. Twoje prawa i dodatkowe informacje o sposobie wykorzystania danych</strong></h2>
-               <ol><li>W niektórych sytuacjach Administrator ma prawo przekazywać Twoje dane osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania zawartej z Tobą umowy lub do zrealizowania obowiązków ciążących na Administratorze. Dotyczy to takich grup odbiorców:<ul style="list-style: lower-alpha;"><li>operatorzy pocztowi</li></ul></li>
-               <li>Twoje dane osobowe przetwarzane przez Administratora nie dłużej, niż jest to konieczne do wykonania związanych z nimi czynności określonych osobnymi przepisami (np. o prowadzeniu rachunkowości). W odniesieniu do danych marketingowych dane nie będą przetwarzane dłużej niż przez 3 lata.</li>
-               <li>Przysługuje Ci prawo żądania od Administratora:
-               <ul style="list-style: lower-alpha;">
-               <li>dostępu do danych osobowych Ciebie dotyczących,</li>
-               <li>ich sprostowania,</li>
-               <li>usunięcia,</li>
-               <li>ograniczenia przetwarzania,</li>
-               <li>oraz przenoszenia danych.</li>
-               </ul>
-               </li>
-               <li>Przysługuje Ci prawo do złożenia sprzeciwu w zakresie przetwarzania wskazanego w pkt 3.2 wobec przetwarzania danych osobowych w celu wykonania prawnie uzasadnionych interesów realizowanych przez Administratora, w tym profilowania, przy czym prawo sprzeciwu nie będzie mogło być wykonane w przypadku istnienia ważnych prawnie uzasadnionych podstaw do przetwarzania, nadrzędnych wobec Ciebie interesów, praw i wolności, w szczególności ustalenia, dochodzenia lub obrony roszczeń.</li>
-               <li>Na działania Administratora przysługuje skarga do Prezesa Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa.</li>
-               <li>Podanie danych osobowych jest dobrowolne, lecz niezbędne do obsługi Serwisu.</li>
-               <li>W stosunku do Ciebie mogą być podejmowane czynności polegające na zautomatyzowanym podejmowaniu decyzji, w tym profilowaniu w celu świadczenia usług w ramach zawartej umowy oraz w celu prowadzenia przez Administratora marketingu bezpośredniego.</li>
-                <li>Dane osobowe nie są przekazywane od krajów trzecich w rozumieniu przepisów o ochronie danych osobowych. Oznacza to, że nie przesyłamy ich poza teren Unii Europejskiej.</li></ol>
-               <h2 class="pb-6 pt-6"><strong>5. Informacje w formularzach</strong></h2>
-               <ol>
-               <li>Serwis zbiera informacje podane dobrowolnie przez użytkownika, w tym dane osobowe, o ile zostaną one podane.</li>
-               <li>Serwis może zapisać informacje o parametrach połączenia (oznaczenie czasu, adres IP).</li>
-               <li>Serwis, w niektórych wypadkach, może zapisać informację ułatwiającą powiązanie danych w formularzu z adresem e-mail użytkownika wypełniającego formularz. W takim wypadku adres e-mail użytkownika pojawia się wewnątrz adresu url strony zawierającej formularz.</li>
-               <li>Dane podane w formularzu są przetwarzane w celu wynikającym z funkcji konkretnego formularza, np. w celu dokonania procesu obsługi zgłoszenia serwisowego lub kontaktu handlowego, rejestracji usług itp. Każdorazowo kontekst i opis formularza w czytelny sposób informuje, do czego on służy.</li>
-               </ol>
-               
-               <h2 class="pb-6 pt-6"><strong>6. Logi Administratora</strong></h2>
-               <ol>
-               <li>Informacje zachowaniu użytkowników w serwisie mogą podlegać logowaniu. Dane te są wykorzystywane w celu administrowania serwisem.</li>
-               </ol>
-               
-               <h2 class="pb-6 pt-6"><strong>7. Informacja o plikach cookies</strong></h2>
-               <ol>
-               <li>Serwis korzysta z plików cookies.</li>
-               <li>Pliki cookies (tzw. „ciasteczka”) stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym Użytkownika Serwisu i przeznaczone są do korzystania ze stron internetowych Serwisu. Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer.</li>
-               <li>Podmiotem zamieszczającym na urządzeniu końcowym Użytkownika Serwisu pliki cookies oraz uzyskującym do nich dostęp jest operator Serwisu.</li>
-               <li>Pliki cookies wykorzystywane są w następujących celach:
-               <ol style="list-style: lower-alpha;">
-               <li>utrzymanie sesji użytkownika Serwisu (po zalogowaniu), dzięki której użytkownik nie musi na każdej podstronie Serwisu ponownie wpisywać loginu i hasła;</li>
-               <li>realizacji celów określonych powyżej w części "Istotne techniki marketingowe";</li>
-               </ol>
-               </li>
-               <li>W ramach Serwisu stosowane są dwa zasadnicze rodzaje plików cookies: „sesyjne” (session cookies) oraz „stałe” (persistent cookies). Cookies „sesyjne” są plikami tymczasowymi, które przechowywane są w urządzeniu końcowym Użytkownika do czasu wylogowania, opuszczenia strony internetowej lub wyłączenia oprogramowania (przeglądarki internetowej). „Stałe” pliki cookies przechowywane są w urządzeniu końcowym Użytkownika przez czas określony w parametrach plików cookies lub do czasu ich usunięcia przez Użytkownika.</li>
-               <li>Oprogramowanie do przeglądania stron internetowych (przeglądarka internetowa) zazwyczaj domyślnie dopuszcza przechowywanie plików cookies w urządzeniu końcowym Użytkownika. Użytkownicy Serwisu mogą dokonać zmiany ustawień w tym zakresie.&nbsp;Przeglądarka internetowa umożliwia usunięcie plików cookies. Możliwe jest także automatyczne blokowanie plików cookies Szczegółowe informacje na ten temat zawiera pomoc lub dokumentacja przeglądarki internetowej.</li>
-               <li>Ograniczenia stosowania plików cookies mogą wpłynąć na niektóre funkcjonalności dostępne na stronach internetowych Serwisu.</li>
-               <li>Pliki cookies zamieszczane w urządzeniu końcowym Użytkownika Serwisu wykorzystywane mogą być również przez współpracujące z operatorem Serwisu podmioty, w szczególności dotyczy to firm: Google (Google Inc. z siedzibą w USA), Facebook (Facebook Inc. z siedzibą w USA), Twitter (Twitter Inc. z siedzibą w USA).</li>
-               </ol>
-               <h2 class="pb-6 pt-6"><strong>8. Zarządzanie plikami cookies – jak w praktyce wyrażać i cofać zgodę?</strong></h2>
-               <ol>
-               <li>Jeśli użytkownik nie chce otrzymywać plików cookies, może zmienić ustawienia przeglądarki. Zastrzegamy, że wyłączenie obsługi plików cookies niezbędnych dla procesów uwierzytelniania, bezpieczeństwa, utrzymania preferencji użytkownika może utrudnić,&nbsp;a w skrajnych przypadkach może uniemożliwić korzystanie ze stron www</li>
-               <li>W celu zarządzania ustawienia cookies wybierz z listy poniżej przeglądarkę internetową, której używasz i postępuj zgodnie z instrukcjami:
+            <section>
+               <h2 class="pb-6 pt-6 font-semibold">9. Serwisy zewnętrzne</h2>
+       
+               <p>W celu realizacji swoich usług korzystamy z następujących serwisów zewnętrznych:</p>
+       
                <ul>
-               <li><a href="https://support.microsoft.com/pl-pl/help/10607/microsoft-edge-view-delete-browser-history">Edge</a></li>
-               <li><a href="https://support.microsoft.com/pl-pl/help/278835/how-to-delete-cookie-files-in-internet-explorer">Internet Explorer</a></li>
-               <li><a href="http://support.google.com/chrome/bin/answer.py?hl=pl&amp;answer=95647">Chrome</a></li>
-               <li><a href="http://support.apple.com/kb/PH5042">Safari</a></li>
-               <li><a href="http://support.mozilla.org/pl/kb/W%C5%82%C4%85czanie%20i%20wy%C5%82%C4%85czanie%20obs%C5%82ugi%20ciasteczek">Firefox</a></li>
-               <li><a href="http://help.opera.com/Windows/12.10/pl/cookies.html">Opera</a></li>
+                   <li><strong>VERCEL (https://vercel.com/legal/privacy-policy)</strong> - hosting strony internetowej. Dane użytkownika (adres IP, przeglądarka, system operacyjny) są przekazywane VERCEL w celu zapewnienia prawidłowego funkcjonowania strony.</li>
+                   <li><strong>Resend (https://resend.com/legal/privacy-policy)</strong> - serwis umożliwiający wysyłanie emaili z formularza kontaktowego i przechowywanie danych użytkownika z wysłanego maila. Dane użytkownika (imię i nazwisko, adres email, numer telefonu treść wiadomości) są przekazywane Resend w celu realizacji usługi.</li>
                </ul>
-               <p>Urządzenia mobilne:</p>
-               <ul>
-               <li><a href="http://support.google.com/chrome/bin/answer.py?hl=pl&amp;answer=95647">Android</a></li>
-               <li><a href="http://support.apple.com/kb/HT1677?viewlocale=pl_PL">Safari (iOS)</a></li>
-               <li><a href="http://www.windowsphone.com/pl-pl/how-to/wp7/web/changing-privacy-and-other-browser-settings">Windows Phone</a></li>
-               </ul>
-               </li>
-               </ol>
+       
+               <p>Oba serwisy są zobowiązane do przestrzegania przepisów RODO i zapewniają odpowiednią ochronę danych osobowych użytkownika.</p>
+           </section>
 
+           <section>
+            <h2 class="pb-6 pt-6 font-semibold">10. Informacje ogólne</h2>
+    
+            <p>Administrator zastrzega sobie prawo do dowolnej zmiany niniejszej Polityki Prywatności bez konieczności informowania o tym Użytkowników w zakresie stosowania i wykorzystywania danych anonimowych lub stosowania plików Cookie.</p>
+            <ul>
+               <li>Wprowadzone zmiany w Polityce Prywatności będą publikowane na tej podstronie Serwisu.</li>
+               <li>Wprowadzone zmiany wchodzą w życie z chwilą ich publikacji.</li>
+            </ul>
+        </section>
          </div>
 		</div>
 
@@ -232,6 +221,9 @@
    }
    .offer ol > li {
       list-style: decimal;
+   }
+   .offer ul > li {
+      list-style: circle;
    }
    li {
       margin: 12px 0;

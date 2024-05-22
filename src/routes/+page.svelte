@@ -214,7 +214,7 @@
 	<div class="mx-auto max-w-screen-xl gap-12 md:gap-16 lg:gap-20 flex flex-col px-4 sm:px-8">
 		<div class="grid grid-cols-6 md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
 			<div class="col-span-6 md:col-span-9">
-				<h4 class="font-primary font-semibold text-dark-50" id="payments-title">Nasza firma w Gorzycach, wyposażyła wszystkich swoich kierowców w nowoczesne terminale płatnicze. Dzięki temu możemy przyjmować  dostępne  płatności bezgotówkowych tylko (MasterCard i Visa), co zapewnia naszym klientom wygodę i bezpieczeństwo podczas podróży.</h4>
+				<h4 class="font-primary font-semibold text-dark-50" id="payments-title">Nasza firma w Gorzycach, wyposażyła wszystkich swoich kierowców w nowoczesne terminale płatnicze. Dzięki temu możemy przyjmować  dostępne  płatności bezgotówkowe MasterCard i Visa, co zapewnia naszym klientom wygodę i bezpieczeństwo podczas podróży.</h4>
 			</div>
 			<div class="col-span-6 md:col-span-3">
 				<enhanced:img src={Payments} alt="Payments image" />
