@@ -69,7 +69,39 @@
 			ease: "expo.out",
 		});
 	});
+
+	export let en = false;
 </script>
+
+{#if en === true }
+
+<section id="onas" class="py-16 md:py-24 lg:py-32">
+	<div class="mx-auto max-w-screen-xl px-4 sm:px-8">
+		<div class="grid grid-cols-6 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16 items-center">
+			<div class="col-span-6 lg:col-span-6">
+				<img src={Map} class="mr-3" alt="Map photo of podkarpackie region" id="photo-map" />
+			</div>
+			<div class="col-span-6 lg:col-span-6">
+				<div class="flex flex-col gap-6 lg:gap-10">
+					<div class="flex flex-row gap-3">
+						<div class=" ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
+						<h3 class="text-dark-50 font-semibold text-h4 lg:text-h3" id="about-title">About us</h3>
+					</div>
+					<div class="flex flex-col gap-6">
+						<h4 class="font-semibold text-p1 lg:text-h4 text-dark-50" id="about-p-1">EuPol was established on January 1, 2006 in Gorzyce. From the very beginning, the primary goal of the company was the satisfaction of our customers. Therefore, we offer reliable , always effective solutions in the field of transport of people and goods. The scope of our activities includes the implementation of transport orders with our own fleet as well as our subcontractors in the country and Europe. We have a license to perform national and international transport in the carriage of persons and goods up to 3.5 GVW.</h4>
+						<h5 class="text-dark-150 text-h5 font-semibold uppercase" id="about-p-2">We employ qualified drivers , so we provide professional service to our customers.</h5>
+						<p class="text-dark-50 text-p2 lg:text-p1 font-semibold" id="about-p-3">EuPol's development strategy includes continuous improvement and regular replacement of the fleet and matching it to the needs of our customers.</p>
+					</div>
+					<div class="flex" id="about-button">
+						<Primary>Contact to us</Primary>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{:else}
 
 <section id="onas" class="py-16 md:py-24 lg:py-32">
 	<div class="mx-auto max-w-screen-xl px-4 sm:px-8">
@@ -96,3 +128,5 @@
 		</div>
 	</div>
 </section>
+
+{/if}

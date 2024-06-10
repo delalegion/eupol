@@ -99,7 +99,7 @@
 		}
 
 	})
-
+	export let en = false;
 </script>
 
 <section id="flota" class="py-16 md:py-24 lg:py-32 bg-dark-100">
@@ -108,7 +108,7 @@
 		<div class="mx-auto max-w-screen-xl gap-20 flex flex-col">
 			<div class="flex flex-row gap-3 justify-center">
 				<div class=" ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-				<h3 class="text-dark-250 font-semibold text-h4 lg:text-h3" id="cars-title">Nasza flota</h3>
+				<h3 class="text-dark-250 font-semibold text-h4 lg:text-h3" id="cars-title">{#if en === true}Our fleet{:else}Nasza flota{/if}</h3>
 			</div>
 		</div>
 
@@ -159,7 +159,7 @@
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">FIAT DUCATO</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
 					<div class="mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-					<h4 class="text-dark-250 font-medium text-p1 md:text-h4">Plandeka: 4.20x2.10x.2.10H 8 EP</h4>
+					<h4 class="text-dark-250 font-medium text-p1 md:text-h4">{#if en === true}Tarpaulin{:else}Plandeka{/if}: 4.20x2.10x.2.10H 8 EP</h4>
 				</div>
 			</div>
 
@@ -170,7 +170,7 @@
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">FIAT DUCATO</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
 					<div class="mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-					<h4 class="text-dark-250 font-medium text-p1 md:text-h4">Plandeka: 4.80x2.20x2.35H 10 EP </h4>
+					<h4 class="text-dark-250 font-medium text-p1 md:text-h4">{#if en === true}Tarpaulin{:else}Plandeka{/if}: 4.80x2.20x2.35H 10 EP </h4>
 				</div>
 			</div>
 
