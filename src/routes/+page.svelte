@@ -77,16 +77,16 @@
 
 	<meta property="url" content="https://eupol-przewoznik.pl">
 	<meta name="description" content="Szybkie, wygodne i tanie przejazdy transportowe">
-	<meta name="dcterms.description" lang="pl" content="EuPol - Twój komfort i bezpieczeństwo">
+	<meta name="dcterms.description" lang="pl" content="EuPol - Firma transportowa osób i towarów">
 	<meta name="keywords" content="Przewoźnik EuPol Stalowa Wola Gorzyce Tarnobrzeg Sandomierz Zaleszany Wrzawy Zbydniów Nisko Przewozy Osób Transport Ludzi Transport Lotnisko Transport Gorzyce">
-	<meta name="dcterms.subject" lang="pl" content="Transport Gorzyce; Transport Sandomierz; Transport Zaleszany; Transport Tarnobrzeg; EuPoL - Twój komfort i bezpieczeństwo; Transport Zbydniów; Przewoźnik ludzi; Tranposrt ludzi; Stalowa Wola; Tarnobrzeg">
+	<meta name="dcterms.subject" lang="pl" content="Transport Gorzyce; Transport Sandomierz; Transport Zaleszany; Transport Tarnobrzeg; EuPoL - Firma transportowa osób i towarów; Transport Zbydniów; Przewoźnik ludzi; Tranposrt ludzi; Stalowa Wola; Tarnobrzeg">
 	<meta name="application-name" content="Szybkie, wygodne i tanie przejazdy transportowe">
-	<meta name="msapplication-tooltip" content="EuPol - Twój komfort i bezpieczeństwo w świecie transportu">
+	<meta name="msapplication-tooltip" content="EuPol - Firma transportowa osób i towarów">
 	<meta name="msapplication-starturl" content="https://eupol-przewoznik.pl">
 	<meta name="msapplication-window" content="width=1024;height=768">
-	<meta property="og:site_name" content="eupol-przewoznik.pl - Twój komfort i bezpieczeństwo w świecie transportu">
+	<meta property="og:site_name" content="eupol-przewoznik.pl - Firma transportowa osób i towarów">
 	<meta property="og:url" content="https://eupol-przewoznik.pl">
-	<meta property="og:title" content="EuPol - Twój komfort i bezpieczeństwo w świecie transportu | eupol-przewoznik.pl">
+	<meta property="og:title" content="EuPol - Firma transportowa osób i towarów | eupol-przewoznik.pl">
 	<meta property="og:image" content="https://eupol-przewoznik.pl/images/favicon.png">
 
 	<link rel="alternate" type="application/rss+xml" title="Wpisy na RSS" href="http://example.net/feed">
@@ -95,7 +95,7 @@
 	<link rel="canonical" href="https://eupol-przewoznik.pl">
 	<!-- <link rel="icon" href="https://eupol-przewoznik.pl/images/favicon.png" type="image/png"> -->
 
-	<title>EuPol - Nowoczesny przewoźnik</title>
+	<title>EuPol - Firma transportowa osób i towarów</title>
 </svelte:head>
 
 <Header />

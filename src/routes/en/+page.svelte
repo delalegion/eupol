@@ -76,17 +76,17 @@
 	<meta charset="UTF-8">
 
 	<meta property="url" content="https://eupol-przewoznik.pl">
-	<meta name="description" content="Szybkie, wygodne i tanie przejazdy transportowe">
-	<meta name="dcterms.description" lang="pl" content="EuPol - Twój komfort i bezpieczeństwo">
-	<meta name="keywords" content="Przewoźnik EuPol Stalowa Wola Gorzyce Tarnobrzeg Sandomierz Zaleszany Wrzawy Zbydniów Nisko Przewozy Osób Transport Ludzi Transport Lotnisko Transport Gorzyce">
-	<meta name="dcterms.subject" lang="pl" content="Transport Gorzyce; Transport Sandomierz; Transport Zaleszany; Transport Tarnobrzeg; EuPoL - Twój komfort i bezpieczeństwo; Transport Zbydniów; Przewoźnik ludzi; Tranposrt ludzi; Stalowa Wola; Tarnobrzeg">
-	<meta name="application-name" content="Szybkie, wygodne i tanie przejazdy transportowe">
-	<meta name="msapplication-tooltip" content="EuPol - Twój komfort i bezpieczeństwo w świecie transportu">
+	<meta name="description" content="Fast, convenient and affordable transportation trips">
+	<meta name="dcterms.description" lang="en" content="EuPol - Transport company for people and goods">
+	<meta name="keywords" content="Carrier EuPol Stalowa Wola Gorzyce Tarnobrzeg Sandomierz Zaleszany Wrzawy Zbydniów Nisko Carriage of People Transport Airport Transport Gorzyce">
+	<meta name="dcterms.subject" lang="en" content="Gorzyce transport; Sandomierz transport; Zaleszany transport; Tarnobrzeg transport; EuPoL - people and goods transport company; Zbydniow transport; people carrier; people transporter; Stalowa Wola; Tarnobrzeg">
+	<meta name="application-name" content="Fast, convenient and affordable transportation trips">
+	<meta name="msapplication-tooltip" content="EuPol - Transport company for people and goods">
 	<meta name="msapplication-starturl" content="https://eupol-przewoznik.pl">
 	<meta name="msapplication-window" content="width=1024;height=768">
-	<meta property="og:site_name" content="eupol-przewoznik.pl - Twój komfort i bezpieczeństwo w świecie transportu">
+	<meta property="og:site_name" content="eupol-przewoznik.pl - Transportation company for people and goods">
 	<meta property="og:url" content="https://eupol-przewoznik.pl">
-	<meta property="og:title" content="EuPol - Twój komfort i bezpieczeństwo w świecie transportu | eupol-przewoznik.pl">
+	<meta property="og:title" content="EuPol - Transport company for people and goods | eupol-przewoznik.pl">
 	<meta property="og:image" content="https://eupol-przewoznik.pl/images/favicon.png">
 
 	<link rel="alternate" type="application/rss+xml" title="Wpisy na RSS" href="http://example.net/feed">
@@ -95,7 +95,7 @@
 	<link rel="canonical" href="https://eupol-przewoznik.pl">
 	<!-- <link rel="icon" href="https://eupol-przewoznik.pl/images/favicon.png" type="image/png"> -->
 
-	<title>EuPol - Przewóz osób Gorzyce</title>
+	<title>EuPol - Transport company for people and goods</title>
 </svelte:head>
 
 <Header en />
