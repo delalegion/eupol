@@ -201,8 +201,12 @@
 						<h3 class="text-dark-250 font-semibold text-h4">+48 669 955 685</h3>
 					</div>
 					<div class="flex flex-row gap-3 cont">
-						<div class="ml-4 mr-3 border-r-2 p-0 border-primary rotate-45"></div>
-						<h3 class="text-dark-250 font-semibold text-h4">krzysztof.eupol@gmail.com </h3>
+						<div class="ml-4 mr-3 border-r-2 p-0 h-7 border-primary rotate-45"></div>
+						<div class="flex flex-col gap-3">
+							<h5 class="text-dark-250 font-semibold text-p1">F.H.U EuPol Krzysztof Kokosza</h5>
+							<h5 class="text-dark-250 font-semibold text-p1">Tax number: 8671014915</h5>
+							<h4 class="text-dark-250 font-semibold text-h4">krzysztof.eupol@gmail.com</h4>
+						</div>
 					</div>
 				</div>
 			</div>
