@@ -1,9 +1,14 @@
 <script lang="ts">
 	import CarOne from '$lib/images/auto-d-1.webp?enhanced';
+	import CarOneNormal from '$lib/images/auto-d-1.webp';
 	import CarTwo from '$lib/images/auto-d-2.webp?enhanced';
+	import CarTwoNormal from '$lib/images/auto-d-2.webp';
 	import CarThree from '$lib/images/auto-d-3.webp?enhanced';
+	import CarThreeNormal from '$lib/images/auto-d-3.webp';
 	import CarFour from '$lib/images/auto-d-4.webp?enhanced';
+	import CarFourNormal from '$lib/images/auto-d-4.webp';
 	import CarFive from '$lib/images/auto-d-5.webp?enhanced';
+	import CarFiveNormal from '$lib/images/auto-d-5.webp';
 	import { onMount } from "svelte";
 	import { inview } from "svelte-inview";
 
@@ -120,8 +125,10 @@
 
 			<div class="absolute top-0 left-0 right-0 bottom-0 z-0 hidden opacity-0" id="gridWidth"></div>
 			<div class="flex flex-col item-car w-screen flex-[0_0_40%] items-center">
-				<div id="car-1" class="clip-rectangle">
-					<enhanced:img src={CarOne} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
+				<div id="car-1" class="clip-rectangle" uk-lightbox>
+					<a href={CarOneNormal}>
+						<enhanced:img src={CarOne} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
+					</a>
 				</div>
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">FORD MONDEO</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
@@ -131,8 +138,10 @@
 			</div>
 
 			<div class="flex flex-col item-car w-screen flex-[0_0_40%] items-center">
-				<div id="car-1" class="clip-rectangle">
-					<enhanced:img src={CarTwo} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
+				<div id="car-1" class="clip-rectangle" uk-lightbox>
+					<a href={CarTwoNormal}>
+						<enhanced:img src={CarTwo} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
+					</a>
 				</div>
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">AUDI A6</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
@@ -142,8 +151,10 @@
 			</div>
 
 			<div class="flex flex-col item-car w-screen flex-[0_0_40%] items-center">
-				<div id="car-1" class="clip-rectangle">
-					<enhanced:img src={CarThree} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
+				<div id="car-1" class="clip-rectangle" uk-lightbox>
+					<a href={CarThreeNormal}>
+						<enhanced:img src={CarThree} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
+					</a>
 				</div>
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">FORD TOURNEO</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
@@ -153,8 +164,10 @@
 			</div>
 
 			<div class="flex flex-col item-car w-screen flex-[0_0_40%] items-center">
-				<div id="car-1" class="clip-rectangle">
-					<enhanced:img src={CarFour} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
+				<div id="car-1" class="clip-rectangle" uk-lightbox>
+					<a href={CarFourNormal}>
+						<enhanced:img src={CarFour} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
+					</a>
 				</div>
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">FIAT DUCATO</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
@@ -164,8 +177,10 @@
 			</div>
 
 			<div class="flex flex-col item-car w-screen flex-[0_0_40%] items-center">
-				<div id="car-1" class="clip-rectangle">
-					<enhanced:img src={CarFive} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
+				<div id="car-1" class="clip-rectangle" uk-lightbox>
+					<a href={CarFiveNormal}>
+						<enhanced:img src={CarFive} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
+					</a>
 				</div>
 				<h2 class="font-semibold text-h3 lg:text-h2 text-dark-250 z-10 ml-20 -mt-6 text-nowrap item-car-h3">FIAT DUCATO</h2>
 				<div class="flex flex-row gap-2 justify-center mt-5">
