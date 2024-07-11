@@ -117,7 +117,7 @@
 			</div>
 		</div>
 
-		<div class="flex sticky top-24 md:top-36 lg:top-52 xl:top-64 item-grid gap-56 ml-24 relative" use:inview={options}
+		<div class="flex sticky top-24 md:top-36 lg:top-52 xl:top-64 item-grid gap-56 ml-24 relative" id="gallery" use:inview={options}
 		on:inview_enter={(event) => {
 			const { inView } = event.detail;
 			isInView = inView;
@@ -125,8 +125,8 @@
 
 			<div class="absolute top-0 left-0 right-0 bottom-0 z-0 hidden opacity-0" id="gridWidth"></div>
 			<div class="flex flex-col item-car w-screen flex-[0_0_40%] items-center">
-				<div id="car-1" class="clip-rectangle" uk-lightbox>
-					<a href={CarOneNormal}>
+				<div id="car-1" class="clip-rectangle">
+					<a href={CarOneNormal} target="_blank">
 						<enhanced:img src={CarOne} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
 					</a>
 				</div>
@@ -138,8 +138,8 @@
 			</div>
 
 			<div class="flex flex-col item-car w-screen flex-[0_0_40%] items-center">
-				<div id="car-1" class="clip-rectangle" uk-lightbox>
-					<a href={CarTwoNormal}>
+				<div id="car-1" class="clip-rectangle">
+					<a href={CarTwoNormal} target="_blank">
 						<enhanced:img src={CarTwo} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
 					</a>
 				</div>
@@ -151,8 +151,8 @@
 			</div>
 
 			<div class="flex flex-col item-car w-screen flex-[0_0_40%] items-center">
-				<div id="car-1" class="clip-rectangle" uk-lightbox>
-					<a href={CarThreeNormal}>
+				<div id="car-1" class="clip-rectangle">
+					<a href={CarThreeNormal} target="_blank">
 						<enhanced:img src={CarThree} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
 					</a>
 				</div>
@@ -164,8 +164,8 @@
 			</div>
 
 			<div class="flex flex-col item-car w-screen flex-[0_0_40%] items-center">
-				<div id="car-1" class="clip-rectangle" uk-lightbox>
-					<a href={CarFourNormal}>
+				<div id="car-1" class="clip-rectangle">
+					<a href={CarFourNormal} target="_blank">
 						<enhanced:img src={CarFour} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
 					</a>
 				</div>
@@ -177,8 +177,8 @@
 			</div>
 
 			<div class="flex flex-col item-car w-screen flex-[0_0_40%] items-center">
-				<div id="car-1" class="clip-rectangle" uk-lightbox>
-					<a href={CarFiveNormal}>
+				<div id="car-1" class="clip-rectangle">
+					<a href={CarFiveNormal} target="_blank">
 						<enhanced:img src={CarFive} class="bg-cover bg-no-repeat rounded-xl min-h-60 max-h-80 max-w-96" alt="Map of card mondeo" />
 					</a>
 				</div>
