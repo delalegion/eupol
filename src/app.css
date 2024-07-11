@@ -33,3 +33,7 @@
       font-family: 'Inter', sans-serif;
    }
 }
+.uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
+   color: white;
+   text-decoration: none;
+}
