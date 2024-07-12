@@ -106,7 +106,7 @@
 
 <section id="info" class="bg-[url('/bginfo.webp')] bg-cover bg-no-repeat bg-center py-24 md:py-36 lg:py-42 px-2 relative">
 	<div class="mx-auto max-w-screen-xl px-4 sm:px-8 gap-12 md:gap-16 lg:gap-20 flex flex-col">
-		<h4 class="font-semibold font-primary text-dark-300 text-p1 md:text-h4 text-" id="info-text">Transport to nasza specjalizacja już od blisko 20 lat. Potrzebujesz fachowej pomocy w kwestii organizacji transportu? Szukasz doświadczonej firmy , która dostarczy twoich klientów jak i towary na czas, bez komplikacji i z zachowaniem najwyższych standardów transportowych. Firma EuPol oferuje profesjonalne usługi transportowe osób oraz towarów. Nasz zespół zorganizuje transport uwzględniając wszystkie Twoje potrzeby takie jak czas, bezpieczeństwo i prywatność.</h4>
+		<h4 class="font-semibold font-primary text-dark-300 text-p1 md:text-h4 text-" id="info-text">Transport to nasza specjalizacja już od blisko 20 lat. Potrzebujesz fachowej pomocy w kwestii organizacji transportu? Szukasz doświadczonej firmy , która dostarczy twoich klientów jak i towary na czas, bez komplikacji i z zachowaniem najwyższych standardów transportowych. Firma EuPol oferuje profesjonalne usługi transportowe osób oraz towarów.<br />Nasz zespół zorganizuje transport uwzględniając wszystkie Twoje potrzeby takie jak czas, bezpieczeństwo i prywatność.</h4>
 	</div>
 </section>
 
